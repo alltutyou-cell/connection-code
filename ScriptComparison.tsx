@@ -8,11 +8,13 @@ interface ScriptComparisonProps {
         label: string;
         text: string;
         why: string;
+        time?: string;
     };
     after: {
         label: string;
         text: string;
         why: string;
+        time?: string;
     };
 }
 
@@ -52,7 +54,7 @@ const ScriptComparison: React.FC<ScriptComparisonProps> = ({ situation, before, 
                                     </div>
                                 </div>
                                 <div className="flex justify-end">
-                                    <span className="text-[10px] text-gray-400 font-medium">Read 2:45 PM</span>
+                                    <span className="text-[10px] text-gray-400 font-medium">Read {before.time || '2:45 PM'}</span>
                                 </div>
 
                                 {/* The "Ignored" silence visual */}
@@ -85,7 +87,7 @@ const ScriptComparison: React.FC<ScriptComparisonProps> = ({ situation, before, 
                         {/* Screen Content */}
                         <div className="bg-white rounded-[2.2rem] h-[500px] overflow-hidden flex flex-col relative">
                             {/* Header */}
-                            <div className="bg-gray-50 p-4 pt-10 border-b border-gray-100 flex items-center justify-center relative">
+                            <div className="bg-gray-5 p-4 pt-10 border-b border-gray-100 flex items-center justify-center relative">
                                 <span className="font-bold text-gray-800 text-sm">❤️ Husband</span>
                             </div>
 
@@ -97,7 +99,7 @@ const ScriptComparison: React.FC<ScriptComparisonProps> = ({ situation, before, 
                                     </div>
                                 </div>
                                 <div className="flex justify-end">
-                                    <span className="text-[10px] text-gray-400 font-medium">Read Now</span>
+                                    <span className="text-[10px] text-gray-400 font-medium">Read {after.time || 'Now'}</span>
                                 </div>
 
                                 {/* The "Typing" animation */}

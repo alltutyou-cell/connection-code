@@ -89,13 +89,13 @@ const LandingPage: React.FC = () => {
     {
       name: "Sarah T.", age: 38, location: "Pittsburgh, PA", marriedYears: 12,
       title: "He actually APOLOGIZED for being distant...",
-      content: "I tried your 'vulnerability without pressure' script from Chapter 5, and I'm not kidding — within 20 minutes he opened up about work stress he's been carrying for months. He actually CRIED and apologized for being distant. We talked for 2 hours. I can't remember the last time we talked for 2 hours about anything besides the kids' schedules.",
+      content: "I tried your 'vulnerability without pressure' script from Chapter 5, and I'm not kidding , within 20 minutes he opened up about work stress he's been carrying for months. He actually CRIED and apologized for being distant. We talked for 2 hours. I can't remember the last time we talked for 2 hours about anything besides the kids' schedules.",
       image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
       name: "Jennifer M.", age: 34, location: "Austin, TX", marriedYears: 9,
       title: "From 3 texts per week to 15+ daily conversations",
-      content: "I was ready to call a lawyer. I felt completely invisible. I started using the SPARK appreciation scripts from Chapter 4, and I'm actually crying writing this — he started texting me throughout the day just to share random thoughts. Yesterday he sent me a funny meme and said 'this made me think of you.' It's been 19 days and we've gone from maybe 3 meaningful exchanges per WEEK to 15+ actual conversations DAILY. I have my best friend back.",
+      content: "I was ready to call a lawyer. I felt completely invisible. I started using the SPARK appreciation scripts from Chapter 4, and I'm actually crying writing this , he started texting me throughout the day just to share random thoughts. Yesterday he sent me a funny meme and said 'this made me think of you.' It's been 19 days and we've gone from maybe 3 meaningful exchanges per WEEK to 15+ actual conversations DAILY. I have my best friend back.",
       image: "https://randomuser.me/api/portraits/women/65.jpg"
     },
     {
@@ -113,7 +113,7 @@ const LandingPage: React.FC = () => {
     {
       name: "Michelle S.", age: 39, location: "Portland, OR", marriedYears: 15,
       title: "He planned a date night WITHOUT me asking...",
-      content: "I haven't felt desired by my husband in probably 5 years. Sex was obligatory. Affection was nonexistent. I used the intimacy scripts from Chapter 8 and almost immediately he started initiating physical touch again. Not even sexual — just touching my back when he walks by, holding my hand while we watch TV. Last week he PLANNED A DATE NIGHT without me asking or suggesting. He hasn't done that in literally 7 years. I cried happy tears in the restaurant bathroom.",
+      content: "I haven't felt desired by my husband in probably 5 years. Sex was obligatory. Affection was nonexistent. I used the intimacy scripts from Chapter 8 and almost immediately he started initiating physical touch again. Not even sexual , just touching my back when he walks by, holding my hand while we watch TV. Last week he PLANNED A DATE NIGHT without me asking or suggesting. He hasn't done that in literally 7 years. I cried happy tears in the restaurant bathroom.",
       image: "https://randomuser.me/api/portraits/women/89.jpg"
     },
     {
@@ -219,7 +219,7 @@ const LandingPage: React.FC = () => {
           <p>It's the crushing realization that you're becoming roommates who happen to share a bed.</p>
           <p>It's the fear that he's one bad day away from deciding this marriage isn't worth the effort.</p>
           <p>It's watching your 8-year-old daughter notice that Daddy never hugs Mommy anymore.</p>
-          <p className="font-bold">It's the terrifying thought that this is just what marriage becomes — and you have 40 more years of this ahead of you.</p>
+          <p className="font-bold">It's the terrifying thought that this is just what marriage becomes , and you have 40 more years of this ahead of you.</p>
         </div>
       </Section>
 
@@ -434,7 +434,7 @@ const LandingPage: React.FC = () => {
                 <div className="bg-rose-50 p-3 rounded-full text-[#E67E7E] font-bold shrink-0 z-10 border-4 border-white shadow-sm w-max md:w-auto">06:30 PM</div>
                 <div className="bg-[#FAF9F6] p-6 rounded-2xl flex-grow hover:bg-rose-50 transition-colors">
                   <h3 className="text-xl font-bold mb-2">The Homecoming</h3>
-                  <p className="text-gray-600">He walks through the door. His face lights up when he sees you. He pulls you into a real, full-body hug—not the obligatory side-hug. Your daughter says "Eww you guys are being gross," but she's smiling.</p>
+                  <p className="text-gray-600">He walks through the door. His face lights up when he sees you. He pulls you into a real, full-body hug,not the obligatory side-hug. Your daughter says "Eww you guys are being gross," but she's smiling.</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row gap-8 items-start relative group">
@@ -468,12 +468,14 @@ const LandingPage: React.FC = () => {
           before={{
             label: "What You're Sending Now (The Trigger)",
             text: "You never help with dinner anymore! I'm doing everything while you just sit there. It's not fair.",
-            why: 'It triggers his "Defensive Nervous System." He hears failure, not a request for love.'
+            why: 'It triggers his "Defensive Nervous System." He hears failure, not a request for love.',
+            time: "6:15 PM"
           }}
           after={{
             label: "The SPARK Script (The Connection)",
             text: "I want us to figure something out together. I'd love more help with dinners this week. I know you've been swamped at work lately. Would you prefer to cook on Tue/Thu, or handle meal planning for next week? Let me know what sounds doable.",
-            why: "It creates safety. It gives him options. It makes him a collaborator instead of a defendant."
+            why: "It creates safety. It gives him options. It makes him a collaborator instead of a defendant.",
+            time: "6:20 PM"
           }}
         />
 
@@ -482,12 +484,14 @@ const LandingPage: React.FC = () => {
           before={{
             label: "What You're Sending Now (The Trigger)",
             text: "I feel like we're just roommates. We never talk anymore. You're always on your phone or watching TV. I miss when we used to have real conversations. I feel so alone even though we're in the same room.",
-            why: 'He feels criticized, shuts down, or says "I don\'t know what you want from me."'
+            why: 'He feels criticized, shuts down, or says "I don\'t know what you want from me."',
+            time: "8:30 PM"
           }}
           after={{
             label: "The SPARK Script (The Connection)",
             text: "I want to share something with you and I want you to know we're okay. I miss having deeper conversations with you. I know you show love in lots of ways, and I appreciate that. Would you be willing to spend 20 minutes tonight just talking? No phones, just us. What do you think?",
-            why: "Reassurance first. Specific feeling. You see him positively. Clear request. He has input."
+            why: "Reassurance first. Specific feeling. You see him positively. Clear request. He has input.",
+            time: "8:32 PM"
           }}
         />
 
@@ -496,12 +500,14 @@ const LandingPage: React.FC = () => {
           before={{
             label: "What You're Sending Now (The Trigger)",
             text: "We never have sex anymore. It's been three weeks. Is there something wrong with me? Why don't you want me?",
-            why: 'It creates pressure and guilt. Obligation destroys desire.'
+            why: 'It creates pressure and guilt. Obligation destroys desire.',
+            time: "10:15 PM"
           }}
           after={{
             label: "The SPARK Script (The Connection)",
             text: "I want to talk about something with zero pressure... I miss being physically close with you. I know we've both been stressed. Would you be interested in some kind of physical connection tonight? Even just cuddling sounds perfect.",
-            why: "It removes the fear of failure. It offers a low-pressure step (cuddling) that often leads to more naturally."
+            why: "It removes the fear of failure. It offers a low-pressure step (cuddling) that often leads to more naturally.",
+            time: "10:18 PM"
           }}
         />
 
@@ -759,7 +765,7 @@ const LandingPage: React.FC = () => {
           />
           <AccordionItem
             question="What if it feels fake or manipulative?"
-            answer="Learning a new language to express your real feelings isn't manipulative—it's strategic. You're still you, and your feelings are real. You're just learning to express them in a language he can actually hear."
+            answer="Learning a new language to express your real feelings isn't manipulative,it's strategic. You're still you, and your feelings are real. You're just learning to express them in a language he can actually hear."
           />
           <AccordionItem
             question="What if he asks why I'm suddenly communicating differently?"
