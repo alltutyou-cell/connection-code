@@ -634,8 +634,8 @@ const LandingPage: React.FC = () => {
       {/* Module 11: Value Stack */}
       <Section id="order" className="bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-rose-50 p-8 md:p-16 rounded-[3rem] border-2 border-rose-100 relative overflow-hidden shadow-2xl">
-            <div className="absolute top-0 right-0 p-4 bg-[#E67E7E] text-white font-bold rounded-bl-3xl text-sm z-10 shadow-md">BEST VALUE</div>
+          <div className="bg-rose-50 px-6 py-12 pt-20 md:p-16 rounded-[3rem] border-2 border-rose-100 relative overflow-hidden shadow-2xl">
+            <div className="absolute top-0 right-0 py-2 px-6 md:p-4 bg-[#E67E7E] text-white font-bold rounded-bl-3xl text-xs md:text-sm z-10 shadow-md">BEST VALUE</div>
 
             <h2 className="text-3xl md:text-6xl serif mb-4 italic font-bold text-gray-900">Everything You Get Today</h2>
             <p className="text-gray-500 mb-12 font-medium">In total, 87 different scripts. If you tried to learn this through therapy, you'd spend $2,000+.</p>
