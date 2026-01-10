@@ -166,22 +166,30 @@ const LandingPage: React.FC = () => {
 
       {/* Module 1: Hero */}
       {/* Module 1: Hero */}
-      <header className="pt-20 md:pt-28 pb-8 px-6 bg-gradient-to-b from-white to-[#FAF9F6] text-center overflow-hidden flex items-center md:h-[calc(100vh-80px)]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 text-left">
-          <div className="flex-1 md:pr-4 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-rose-50 text-[#E67E7E] px-3 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4 border border-rose-100">
+      <header className="pt-24 pb-8 px-6 bg-gradient-to-b from-white to-[#FAF9F6] text-center overflow-hidden flex items-center min-h-screen md:min-h-[calc(100vh-80px)]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-12 text-left">
+          <div className="flex-1 md:pr-4 animate-fade-in-up md:mt-0">
+            {/* Trust Strip */}
+            <div className="flex items-center gap-2 mb-6">
+              <div className="flex">
+                {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />)}
+              </div>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">Trusted by 500+ wives</span>
+            </div>
+
+            <div className="inline-flex items-center gap-2 bg-rose-50 text-[#E67E7E] px-3 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest mb-3 border border-rose-100">
               <Sparkles className="w-3 h-3" />
               New Method
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-6xl serif font-bold leading-[1.1] mb-4 text-gray-900 tracking-tight">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl serif font-bold leading-[1.1] mb-3 text-gray-900 tracking-tight">
               The 'Backwards' Texting Method That Made My Distant Husband <span className="italic text-[#E67E7E] relative whitespace-nowrap">
                 Fall In Love With Me Again
                 <svg className="absolute w-full h-2 -bottom-1 left-0 text-rose-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" /></svg>
               </span>... In 19 Days
             </h1>
-            <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed font-light max-w-xl">
+            <p className="text-sm md:text-lg text-gray-600 mb-6 leading-relaxed font-light max-w-xl">
               The exact word-for-word scripts that transformed my cold, one-word-text marriage into the passionate connection I thought was gone forever.
-              <span className="block mt-1 text-sm text-gray-400 italic">(Even after therapy, date nights, and romance books all failed)</span>
+              <span className="block mt-1 text-xs md:text-sm text-gray-400 italic">(Even after therapy, date nights, and romance books all failed)</span>
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-3">
               <a href="#order" className="coral-button text-white px-6 py-3 rounded-lg font-bold text-base shadow-lg w-full sm:w-auto text-center hover:scale-105 transition-transform flex items-center justify-center gap-2">
@@ -193,7 +201,7 @@ const LandingPage: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 flex justify-center md:justify-end relative animate-fade-in-up scale-90 md:scale-100 origin-center" style={{ animationDelay: '0.2s' }}>
+          <div className="flex-1 flex justify-center md:justify-end relative animate-fade-in-up scale-75 md:scale-100 origin-top md:origin-center -mt-8 md:mt-0" style={{ animationDelay: '0.2s' }}>
             {/* Abstract blob background */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-rose-100/40 to-blue-50/40 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
             <BookMockup />
