@@ -819,7 +819,6 @@ const LandingPage: React.FC = () => {
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/support" className="hover:text-white transition-colors">Support</Link>
-            <Link to="/login" className="hover:text-white transition-colors">Member Login</Link>
           </div>
 
           <div className="text-xs text-gray-600 space-y-4 max-w-2xl mx-auto leading-relaxed border-t border-gray-800 pt-8">

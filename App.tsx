@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import { TermsOfService, PrivacyPolicy, Support, Login } from './Pages';
+import { TermsOfService, PrivacyPolicy, Support } from './Pages';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -23,7 +23,6 @@ const App: React.FC = () => {
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/support" element={<Support />} />
-        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );

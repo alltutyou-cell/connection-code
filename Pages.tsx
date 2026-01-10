@@ -94,21 +94,4 @@ export const Support = () => (
     </Layout>
 );
 
-export const Login = () => (
-    <Layout title="Member Login">
-        <div className="max-w-sm mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-            <form className="space-y-4">
-                <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-1">Email Address</label>
-                    <input type="email" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#E67E7E]/50" placeholder="sarah@example.com" />
-                </div>
-                <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-1">Password</label>
-                    <input type="password" className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#E67E7E]/50" placeholder="••••••••" />
-                </div>
-                <button type="submit" className="w-full bg-gray-900 text-white font-bold py-3 rounded-xl hover:bg-gray-800 transition-colors">Sign In</button>
-            </form>
-            <p className="text-center mt-4 text-xs text-gray-400">Forgot your password? <a href="#" className="underline">Reset here</a></p>
-        </div>
-    </Layout>
-);
+
