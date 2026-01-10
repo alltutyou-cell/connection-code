@@ -1,17 +1,18 @@
 
 import React, { useState } from 'react';
-import { 
-  ChevronDown, 
-  MessageSquare, 
-  ShieldCheck, 
-  Star, 
-  Heart, 
-  Lock, 
+import {
+  ChevronDown,
+  MessageSquare,
+  ShieldCheck,
+  Star,
+  Heart,
+  Lock,
   ArrowRight,
   CheckCircle2,
   Clock,
   Sparkles
 } from 'lucide-react';
+import DoomScrollSection from './DoomScrollSection';
 
 // --- Types ---
 
@@ -35,11 +36,10 @@ const Section: React.FC<{ children: React.ReactNode; className?: string; id?: st
 
 const ChatBubble: React.FC<{ text: string; isUser?: boolean; delay?: string }> = ({ text, isUser, delay }) => (
   <div className={`flex flex-col mb-4 ${isUser ? 'items-end' : 'items-start'} animate-fade-in`}>
-    <div className={`max-w-[85%] p-4 rounded-2xl shadow-sm text-sm md:text-base leading-relaxed ${
-      isUser 
-      ? 'bg-blue-500 text-white rounded-tr-none' 
-      : 'bg-gray-100 text-gray-800 rounded-tl-none border border-gray-200'
-    }`}>
+    <div className={`max-w-[85%] p-4 rounded-2xl shadow-sm text-sm md:text-base leading-relaxed ${isUser
+        ? 'bg-blue-500 text-white rounded-tr-none'
+        : 'bg-gray-100 text-gray-800 rounded-tl-none border border-gray-200'
+      }`}>
       {text}
     </div>
   </div>
@@ -49,7 +49,7 @@ const AccordionItem: React.FC<{ question: string; answer: string }> = ({ questio
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="border-b border-gray-200">
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full py-6 flex justify-between items-center text-left hover:text-[#E67E7E] transition-colors"
       >
@@ -138,12 +138,15 @@ const App: React.FC = () => {
         </div>
       </Section>
 
+      {/* New Module: Doom Scroll Trauma */}
+      <DoomScrollSection />
+
       {/* Module 3: False Solutions */}
       <Section className="bg-[#FAF9F6]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl serif mb-8 italic">Why Everything You've Tried Has Failed</h2>
           <p className="text-lg mb-12 text-gray-600">You've done the work. You read the books. You suggested the date nights. So why isn't it working?</p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
               <div className="text-red-400 mb-4 font-bold uppercase tracking-widest text-xs">The Expert Advice:</div>
@@ -156,11 +159,11 @@ const App: React.FC = () => {
               <p className="text-gray-500 text-sm italic">The Reality: You sat across from each other in forced silence at expensive restaurants.</p>
             </div>
           </div>
-          
+
           <div className="mt-16 bg-white p-10 rounded-3xl border-2 border-rose-100 shadow-xl max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-6">The Truth They Won't Tell You:</h3>
             <p className="text-lg leading-relaxed text-gray-700">
-              Men's brains process emotional information differently. When you share feelings the way that feels natural to you... 
+              Men's brains process emotional information differently. When you share feelings the way that feels natural to you...
               <span className="font-bold text-[#E67E7E]"> his brain interprets it as a threat or a problem to escape from.</span>
             </p>
           </div>
@@ -173,7 +176,7 @@ const App: React.FC = () => {
           <h2 className="text-4xl md:text-6xl serif mb-6 italic font-bold tracking-tight">The SPARK Framework</h2>
           <p className="text-xl text-gray-500">The 5-Step System That Turns Any Conversation Into Connection</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {[
             { l: 'S', n: 'Set Temperature', d: 'Create safety first' },
@@ -195,7 +198,7 @@ const App: React.FC = () => {
       <Section className="bg-gray-900 text-white rounded-[3rem] my-12 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <h2 className="text-3xl md:text-5xl serif text-center mb-16 italic">A Peek Inside The Scripts</h2>
-          
+
           <div className="space-y-20">
             <div>
               <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
@@ -281,7 +284,7 @@ const App: React.FC = () => {
                 </div>
               ))}
             </div>
-            
+
             <div className="mb-10">
               <p className="text-gray-400 uppercase tracking-widest text-xs font-bold mb-2">Total Value: $252</p>
               <div className="text-6xl md:text-8xl font-black text-gray-900 mb-2">$19</div>
@@ -291,7 +294,7 @@ const App: React.FC = () => {
             <a href="#" className="coral-button text-white px-10 py-6 rounded-2xl font-bold text-2xl shadow-2xl w-full block mb-6 animate-pulse">
               TRANSFORM MY MARRIAGE NOW
             </a>
-            
+
             <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
               <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" className="h-8" />
               <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" className="h-8" />
@@ -324,19 +327,19 @@ const App: React.FC = () => {
       <Section id="faq">
         <h2 className="text-4xl md:text-5xl serif text-center mb-16 font-bold tracking-tight italic">Your Questions Answered</h2>
         <div className="max-w-3xl mx-auto bg-white px-8 rounded-3xl shadow-sm">
-          <AccordionItem 
+          <AccordionItem
             question="Will this work if my husband isn't trying at all?"
             answer="Yes. The SPARK system is designed to work unilaterally. You change your communication, which triggers a different neurological response in him. Most successful users started with husbands who were completely checked out."
           />
-          <AccordionItem 
+          <AccordionItem
             question="What if it feels fake or manipulative?"
             answer="Learning a new language to express your real feelings isn't manipulative—it's strategic. You're already using 'scripts' now, but your current ones accidentally trigger defensiveness. These ones create safety."
           />
-          <AccordionItem 
+          <AccordionItem
             question="Is this just for texting or in-person too?"
             answer="The framework works for ALL communication. We call it Texting Scripts because that's where modern tension often starts, but the neuroscience applies whether you're texting or talking face-to-face."
           />
-          <AccordionItem 
+          <AccordionItem
             question="What format is this in?"
             answer="It's a digital PDF system. You get instant access immediately after purchase. You can read it on your phone, tablet, computer, or print it out."
           />
