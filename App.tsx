@@ -132,7 +132,7 @@ const App: React.FC = () => {
       )}
 
       {/* Module 1: Hero */}
-      <header className="pt-28 md:pt-40 pb-16 px-6 bg-gradient-to-b from-white to-[#FAF9F6] text-center overflow-hidden">
+      <header className="pt-24 md:pt-32 pb-12 px-6 bg-gradient-to-b from-white to-[#FAF9F6] text-center overflow-hidden min-h-[90vh] flex items-center">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
           <div className="flex-1 text-left md:pr-8 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-rose-50 text-[#E67E7E] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-rose-100">
@@ -145,7 +145,7 @@ const App: React.FC = () => {
                 <svg className="absolute w-full h-3 -bottom-1 left-0 text-rose-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" /></svg>
               </span>... In 19 Days
             </h1>
-            <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed font-light">
+            <p className="text-lg md:text-2xl text-gray-600 mb-6 leading-relaxed font-light">
               The exact word-for-word scripts that transformed my cold, one-word-text marriage into the passionate connection I thought was gone forever.
               <span className="block mt-2 text-sm md:text-base text-gray-500 italic">(Even after therapy, date nights, and romance books all failed)</span>
             </p>
@@ -422,7 +422,7 @@ const App: React.FC = () => {
         />
 
         <div className="text-center mt-12 mb-8">
-          <p className="text-xl text-gray-700 font-bold mb-6">You're getting 50+ more just like these.</p>
+          <p className="text-xl text-gray-700 font-bold mb-6">You're getting 87 more just like these.</p>
         </div>
       </Section>
 
@@ -450,7 +450,7 @@ const App: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-6 text-[#E67E7E] uppercase tracking-widest">Part II: The Scripts</h3>
+              <h3 className="text-xl font-bold mb-6 text-[#E67E7E] uppercase tracking-widest">Part II: The Scripts (87 Total)</h3>
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <span className="font-bold text-gray-300">04</span>
@@ -485,7 +485,7 @@ const App: React.FC = () => {
             <div className="absolute top-0 right-0 p-4 bg-[#E67E7E] text-white font-bold rounded-bl-3xl text-sm z-10 shadow-md">BEST VALUE</div>
 
             <h2 className="text-3xl md:text-6xl serif mb-4 italic font-bold text-gray-900">Everything You Get Today</h2>
-            <p className="text-gray-500 mb-12 font-medium">If you tried to learn this through therapy, you'd spend $2,000+.</p>
+            <p className="text-gray-500 mb-12 font-medium">In total, 87 different scripts. If you tried to learn this through therapy, you'd spend $2,000+.</p>
 
             <div className="flex flex-col md:flex-row gap-12 items-center mb-12">
               {/* Left: Product Image */}
