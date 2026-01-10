@@ -4,13 +4,13 @@ const BookMockup: React.FC = () => {
     return (
         <div className="relative group w-[220px] md:w-[260px] mx-auto transition-transform duration-500 hover:scale-[1.02] my-8 perspective-1000">
             {/* The Book Itself */}
-            <div className="relative transform-style-3d rotate-y-[-15deg] rotate-x-[5deg] group-hover:rotate-y-[-5deg] group-hover:rotate-x-[0deg] transition-all duration-700 ease-out shadow-[20px_20px_50px_rgba(0,0,0,0.3)] bg-gray-900 rounded-r-md rounded-l-sm aspect-[2/3.1]">
+            <div className="relative transform-style-3d rotate-y-[-15deg] rotate-x-[5deg] group-hover:rotate-y-[-5deg] group-hover:rotate-x-[0deg] transition-all duration-700 ease-out shadow-[20px_20px_50px_rgba(0,0,0,0.3)] bg-white rounded-r-md rounded-l-sm aspect-[2/3.1]">
 
-                {/* 1. Spine (Left Edge) - Darker shade of cover to simulate wrapping */}
-                <div className="absolute top-0 bottom-0 left-0 w-4 bg-gray-800 transform -translate-x-full origin-right rotate-y-[-90deg] rounded-l-sm border-l border-white/10 z-10 flex flex-col justify-between overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
-                    {/* Creating a 'curved' look for the spine */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/20"></div>
+                {/* 1. Spine (Left Edge) - Light/White to match cover, avoiding "black line" */}
+                <div className="absolute top-0 bottom-0 left-0 w-4 bg-gray-100 transform -translate-x-full origin-right rotate-y-[-90deg] rounded-l-sm border-l border-white/50 z-10 flex flex-col justify-between overflow-hidden">
+                    {/* Subtle shadow to show curvature without being a "black line" */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent opacity-50"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-black/10"></div>
                 </div>
 
                 {/* 2. Front Cover */}
