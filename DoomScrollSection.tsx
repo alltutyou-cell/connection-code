@@ -42,7 +42,7 @@ const DoomScrollSection: React.FC = () => {
                     {/* Decorative Elements */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-rose-100/50 to-blue-50/50 rounded-full blur-3xl -z-10"></div>
 
-                    <div className="bg-white rounded-[2rem] shadow-2xl border border-gray-100 p-5 max-w-[20rem] w-full rotate-3 hover:rotate-0 transition-all duration-700 ease-out transform cursor-default group">
+                    <div className="bg-white rounded-[2.5rem] shadow-2xl border border-gray-100 p-6 max-w-[22rem] w-full rotate-3 hover:rotate-0 transition-all duration-700 ease-out transform cursor-default group">
                         {/* Header */}
                         <div className="flex items-center justify-between mb-6">
                             <div className="flex items-center gap-3">
