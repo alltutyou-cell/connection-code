@@ -611,30 +611,38 @@ const App: React.FC = () => {
             <h2 className="text-3xl md:text-6xl serif mb-4 italic font-bold text-gray-900">Everything You Get Today</h2>
             <p className="text-gray-500 mb-12 font-medium">In total, 87 different scripts. If you tried to learn this through therapy, you'd spend $2,000+.</p>
 
-            <div className="flex flex-col md:flex-row gap-12 items-center mb-12">
+            <div className="flex flex-col md:flex-row gap-8 items-start mb-12">
               {/* Left: Product Image */}
-              <div className="flex-1 w-full flex justify-center">
-                <div className="transform scale-110">
+              <div className="flex-1 w-full flex justify-center sticky top-8">
+                <div className="transform scale-100 md:scale-110 transition-transform hover:scale-105 duration-500">
                   <BookMockup />
+                  <div className="mt-8 bg-white/50 backdrop-blur-sm p-4 rounded-xl border border-white max-w-xs mx-auto text-sm text-gray-500 font-medium shadow-sm">
+                    "I expected a PDF, but this feels like a masterclass."
+                  </div>
                 </div>
               </div>
 
               {/* Right: Stack List */}
-              <div className="flex-1 space-y-4 text-left w-full bg-white/60 p-6 rounded-2xl backdrop-blur-sm border border-white/50">
+              <div className="flex-1 w-full space-y-3">
                 {[
-                  { n: 'The Connection Code Main Book', v: '$47' },
-                  { n: 'Bonus: Reading His Responses Decoded', v: '$27' },
-                  { n: 'Bonus: Personality Type Adaptation', v: '$37' },
-                  { n: 'Bonus: Advanced Relationship Repair', v: '$47' },
-                  { n: 'Bonus: Quick Reference Script Cards', v: '$27' },
-                  { n: 'Bonus: 30-Day Implementation Plan', v: '$67' }
+                  { n: 'The Connection Code Main Book', v: '$47', sub: 'The complete SPARK framework & 87 scripts' },
+                  { n: 'Bonus: Reading His Responses Decoded', v: '$27', sub: 'Stop guessing what he really means' },
+                  { n: 'Bonus: Personality Type Adaptation', v: '$37', sub: 'Customize for his specific personality' },
+                  { n: 'Bonus: Advanced Relationship Repair', v: '$47', sub: 'For crisis moments & deep wounds' },
+                  { n: 'Bonus: Quick Reference Script Cards', v: '$27', sub: 'Keep these on your phone for emergencies' },
+                  { n: 'Bonus: 30-Day Implementation Plan', v: '$67', sub: 'Your daily roadmap to connection' }
                 ].map((item, i) => (
-                  <div key={i} className="flex justify-between items-center py-3 border-b border-rose-100 last:border-0">
-                    <span className="font-bold text-gray-800 flex items-center gap-3 text-sm md:text-base">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
-                      {item.n}
-                    </span>
-                    <span className="text-gray-400 line-through text-xs md:text-sm font-mono bg-white px-2 py-1 rounded shadow-sm">{item.v}</span>
+                  <div key={i} className="group flex justify-between items-center p-4 bg-white rounded-xl border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 transition-all hover:scale-[1.01] cursor-default">
+                    <div className="flex items-start gap-4 text-left">
+                      <div className="bg-rose-100 p-2 rounded-full mt-1 group-hover:bg-[#E67E7E] group-hover:text-white transition-colors">
+                        <CheckCircle2 className="w-5 h-5 text-[#E67E7E] group-hover:text-white transition-colors" />
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm md:text-base leading-tight group-hover:text-[#E67E7E] transition-colors">{item.n}</p>
+                        <p className="text-xs text-gray-500 mt-1">{item.sub}</p>
+                      </div>
+                    </div>
+                    <span className="text-gray-300 line-through text-xs md:text-sm font-mono bg-gray-50 px-2 py-1 rounded ml-4">{item.v}</span>
                   </div>
                 ))}
               </div>
