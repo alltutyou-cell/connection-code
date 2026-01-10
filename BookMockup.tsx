@@ -2,49 +2,57 @@ import React from 'react';
 
 const BookMockup: React.FC = () => {
     return (
-        <div className="relative group w-[240px] md:w-[280px] mx-auto my-10 perspective-1000">
-            {/* Softcover Book Container - Tilted and Floating */}
-            <div className="relative transform-style-3d rotate-y-[-12deg] rotate-x-[5deg] group-hover:rotate-y-[-2deg] group-hover:rotate-x-[0deg] transition-all duration-700 ease-out">
+        <div className="relative group w-[220px] md:w-[260px] mx-auto my-12 perspective-1000">
+            {/* 3D Container */}
+            <div className="relative transform-style-3d rotate-y-[-25deg] rotate-x-[10deg] group-hover:rotate-y-[-15deg] group-hover:rotate-x-[5deg] transition-all duration-700 ease-out shadow-2xl rounded-r-md aspect-[2/3.1]">
 
-                {/* 1. The Cover - With Soft Rounded Spine */}
-                <div className="relative z-20 w-full aspect-[2/3.1] bg-white rounded-r-lg rounded-l-md shadow-2xl overflow-hidden brightness-100 group-hover:brightness-105 transition-all">
+                {/* 1. FRONT COVER */}
+                <div className="relative z-20 w-full h-full bg-white rounded-r-md overflow-hidden backface-hidden">
                     <img
                         src="/book-cover.jpg"
                         alt="The Connection Code Book"
                         className="w-full h-full object-cover"
                     />
 
-                    {/* Lighting/Texture Effects for 'Softcover' Feel */}
-                    {/* Spine Curvature Highlight (Left) */}
-                    <div className="absolute top-0 bottom-0 left-0 w-8 bg-gradient-to-r from-black/30 via-white/20 to-transparent pointer-events-none mix-blend-overlay"></div>
-
-                    {/* Surface Sheen */}
-                    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none mix-blend-screen"></div>
-
-                    {/* Subtle crease near spine */}
-                    <div className="absolute top-0 bottom-0 left-[6px] w-[1px] bg-black/10"></div>
+                    {/* Realistic Lighting Overlays */}
+                    {/* Spine Indentation (The 'Hinge') */}
+                    <div className="absolute top-0 bottom-0 left-[2%] w-[2px] bg-black/20 blur-[1px]"></div>
+                    {/* Glossy Sheen Reflection */}
+                    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[length:400%_100%] animate-shimmer"></div>
+                    {/* Edge Highlight */}
+                    <div className="absolute top-0 bottom-0 left-0 w-2 bg-gradient-to-r from-white/30 to-transparent"></div>
                 </div>
 
-                {/* 2. Paperback Spine (Curved) */}
-                <div className="absolute top-[1px] bottom-[1px] left-[1px] w-5 bg-gray-100 transform -translate-x-[98%] rotate-y-[-90deg] origin-right rounded-l-sm overflow-hidden border-l border-gray-200">
-                    {/* Cylinder Gradient for curvature */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-300 via-white to-gray-300 opacity-80"></div>
+                {/* 2. WRAPPED SPINE (The Key to Realism) */}
+                {/* We use the same image but darker to simulate the art wrapping around */}
+                <div className="absolute top-0 bottom-0 left-0 w-10 bg-gray-800 transform -translate-x-full origin-right rotate-y-[-90deg] rounded-l-sm overflow-hidden z-10 border-r border-black/20">
+                    <div className="relative w-full h-full overflow-hidden">
+                        <img
+                            src="/book-cover.jpg"
+                            className="absolute w-[800%] h-full max-w-none object-cover left-0 opacity-40 blur-[1px] grayscale-[20%]"
+                            alt=""
+                        />
+                        {/* Spine Curvature Shadow */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60"></div>
+                    </div>
                 </div>
 
-                {/* 3. Pages Block (The Thickness) */}
-                <div className="absolute top-[2px] bottom-[2px] right-[2px] w-[18px] bg-white transform translate-x-[95%] translate-z-[-2px] rotate-y-[90deg] origin-left border-r border-gray-200">
-                    {/* Detailed Page Texture - Thin lines */}
-                    <div className="w-full h-full bg-[repeating-linear-gradient(90deg,#f5f5f5,#f5f5f5_1px,#ffffff_1px,#ffffff_2px)]"></div>
-                    {/* Shadow at the 'binding' end of the pages */}
-                    <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/5"></div>
+                {/* 3. PAGES (Right Edge) */}
+                <div className="absolute top-[3px] bottom-[3px] right-0 w-[24px] bg-[#f8f8f8] transform translate-x-full origin-left rotate-y-[90deg] translate-z-[1px] border-l border-gray-300">
+                    <div className="w-full h-full bg-[repeating-linear-gradient(90deg,#f1f1f1,#f1f1f1_1px,#fff_2px,#fff_3px)]"></div>
                 </div>
 
-                {/* 4. Back Cover (Barely visible, but adds depth) */}
-                <div className="absolute top-0 bottom-0 left-0 w-full h-full bg-gray-100 transform translate-z-[-20px] rounded-lg border border-gray-200"></div>
+                {/* 4. PAGES (Bottom Edge) */}
+                <div className="absolute bottom-0 left-0 right-0 h-[24px] bg-[#f8f8f8] transform translate-y-full origin-top rotate-x-[-90deg]">
+                    <div className="w-full h-full bg-[repeating-linear-gradient(0deg,#f1f1f1,#f1f1f1_1px,#fff_2px,#fff_3px)]"></div>
+                </div>
 
-                {/* 5. Realistic Drop Shadow */}
-                <div className="absolute -bottom-8 left-4 right-4 h-6 bg-black/40 blur-xl opacity-60 rounded-full transform rotate-x-[60deg] group-hover:scale-110 group-hover:opacity-40 transition-all duration-700"></div>
+                {/* 5. BACK COVER (For depth perception) */}
+                <div className="absolute top-0 bottom-0 left-0 w-full h-full bg-gray-800 transform translate-z-[-23px] rounded-l-sm shadow-xl"></div>
             </div>
+
+            {/* Ground Shadow */}
+            <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-3/4 h-8 bg-black/40 blur-2xl rounded-[100%] transform rotate-x-[60deg] opacity-50 group-hover:scale-110 transition-transform duration-700"></div>
         </div>
     );
 };
