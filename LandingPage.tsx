@@ -127,6 +127,12 @@ const LandingPage: React.FC = () => {
       title: "We were 2 weeks from separation papers...",
       content: "I had already consulted with a divorce attorney. We were DONE. I was planning how to tell the kids. I bought this book as a last-ditch 'nothing left to lose' attempt. I figured worst case, I waste $19. Best case, maybe we could be civil co-parents. I didn't expect my marriage to actually transform. But that's exactly what happened. The 30-Day Action Plan in Chapter 10 gave me a roadmap. We're now 90 days in and I can honestly say I'm more in love with him than I was on our wedding day.",
       image: "https://randomuser.me/api/portraits/women/54.jpg"
+    },
+    {
+      name: "Katherine L.", age: 44, location: "Seattle WA", marriedYears: 15,
+      title: "I was planning my exit strategy... now I'm planning our anniversary trip",
+      content: "I had already started looking at apartments. I was done. Fifteen years of marriage and I felt like I was living with a stranger who occasionally grunted responses at me. I downloaded this book thinking 'one last attempt before I call it quits.' I used the vulnerability script from Chapter 5 and for the first time in YEARS he actually opened up about how stressed and overwhelmed he's been feeling. We talked for over an hour - real talking, not logistics. Three weeks in and he's already suggested we plan a special trip for our anniversary next month. I literally had one foot out the door and now I'm excited about our future together again.",
+      image: "https://randomuser.me/api/portraits/women/22.jpg"
     }
   ];
 
