@@ -94,6 +94,24 @@ const App: React.FC = () => {
       title: "After $8,000 in failed marriage counseling...",
       content: "We spent $8,000 on marriage therapy over 18 months. My husband hated every session. We quit therapy and I was ready to quit the marriage. Then I found The Connection Code. The conflict resolution scripts in Chapter 7 gave me the exact words I needed. We solved a 3-year-running argument about his mother in ONE 15-minute conversation. I'm simultaneously furious that a $19 book did what $8,000 of therapy couldn't... and incredibly grateful that it exists.",
       image: "https://randomuser.me/api/portraits/women/12.jpg"
+    },
+    {
+      name: "Michelle S.", age: 39, location: "Portland, OR", marriedYears: 15,
+      title: "He planned a date night WITHOUT me asking...",
+      content: "I haven't felt desired by my husband in probably 5 years. Sex was obligatory. Affection was nonexistent. I used the intimacy scripts from Chapter 8 and almost immediately he started initiating physical touch again. Not even sexual — just touching my back when he walks by, holding my hand while we watch TV. Last week he PLANNED A DATE NIGHT without me asking or suggesting. He hasn't done that in literally 7 years. I cried happy tears in the restaurant bathroom.",
+      image: "https://randomuser.me/api/portraits/women/89.jpg"
+    },
+    {
+      name: "Rebecca N.", age: 33, location: "Chicago, IL", marriedYears: 8,
+      title: "His friends noticed and asked what changed...",
+      content: "My husband's best friend pulled me aside at a party and said 'What did you do to Dave? He won't shut up about how happy he is.' I almost laughed because I was thinking the same thing! The appreciation scripts made such a dramatic difference that OTHER PEOPLE noticed. Dave went from barely acknowledging my existence to texting me during his lunch breaks to tell me he's thinking about me. In 6 weeks. Six weeks.",
+      image: "https://randomuser.me/api/portraits/women/68.jpg"
+    },
+    {
+      name: "Melissa W.", age: 42, location: "Nashville, TN", marriedYears: 16,
+      title: "We were 2 weeks from separation papers...",
+      content: "I had already consulted with a divorce attorney. We were DONE. I was planning how to tell the kids. I bought this book as a last-ditch 'nothing left to lose' attempt. I figured worst case, I waste $19. Best case, maybe we could be civil co-parents. I didn't expect my marriage to actually transform. But that's exactly what happened. The 30-Day Action Plan in Chapter 10 gave me a roadmap. We're now 90 days in and I can honestly say I'm more in love with him than I was on our wedding day.",
+      image: "https://randomuser.me/api/portraits/women/54.jpg"
     }
   ];
 
@@ -303,6 +321,34 @@ const App: React.FC = () => {
           ))}
         </div>
 
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div className="bg-red-50 p-8 rounded-3xl border border-red-100">
+            <h3 className="font-bold text-red-800 mb-4 border-b border-red-200 pb-2">❌ THE TRADITIONAL APPROACH</h3>
+            <p className="text-sm font-bold text-red-400 uppercase tracking-widest mb-2">Triggers Defensive Response</p>
+            <p className="italic text-gray-600 mb-4">"We need to talk. I've been feeling really disconnected from you lately, especially since you started working longer hours... which reminds me of when my dad was never around. I know you're working hard but I miss us. I don't want to end up like my parents. I need you to understand how this affects me."</p>
+            <div className="bg-white p-4 rounded-xl text-sm text-gray-500 border border-red-100">
+              <span className="font-bold block mb-1">What Happens In His Brain:</span>
+              Stress hormones flood his system. He feels criticized for his character. His nervous system screams "ESCAPE". He shuts down.
+            </div>
+          </div>
+
+          <div className="bg-green-50 p-8 rounded-3xl border border-green-100">
+            <h3 className="font-bold text-green-800 mb-4 border-b border-green-200 pb-2">✅ THE SPARK APPROACH</h3>
+            <p className="text-sm font-bold text-green-600 uppercase tracking-widest mb-2">Creates Safety & Connection</p>
+            <div className="space-y-3 text-gray-700">
+              <p><span className="font-bold text-green-700">S:</span> "I want to share something and get your thoughts."</p>
+              <p><span className="font-bold text-green-700">P:</span> "I miss our connection time together."</p>
+              <p><span className="font-bold text-green-700">A:</span> "I know you're working hard for our future, and I appreciate that."</p>
+              <p><span className="font-bold text-green-700">R:</span> "Would you be willing to go for a 30-minute walk with me on Sunday?"</p>
+              <p><span className="font-bold text-green-700">K:</span> "Thanks for listening. Let me know what you think."</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl text-sm text-gray-500 border border-green-100 mt-4">
+              <span className="font-bold block mb-1">What Happens In His Brain:</span>
+              Safe. Clear. Respected. He understands exactly what you need and feels like a hero for saying yes.
+            </div>
+          </div>
+        </div>
+
         <div className="mt-16 bg-rose-50 rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold mb-4">Why SPARK works when therapy fails:</h3>
           <p className="text-lg text-gray-700 italic">
@@ -409,7 +455,21 @@ const App: React.FC = () => {
         />
 
         <ScriptComparison
-          situation="Situation 2: When You Want Physical Intimacy"
+          situation="Situation 2: When You're Feeling Disconnected And Need Emotional Intimacy"
+          before={{
+            label: "What You're Sending Now (The Trigger)",
+            text: "I feel like we're just roommates. We never talk anymore. You're always on your phone or watching TV. I miss when we used to have real conversations. I feel so alone even though we're in the same room.",
+            why: 'He feels criticized, shuts down, or says "I don\'t know what you want from me."'
+          }}
+          after={{
+            label: "The SPARK Script (The Connection)",
+            text: "I want to share something with you and I want you to know we're okay. I miss having deeper conversations with you. I know you show love in lots of ways, and I appreciate that. Would you be willing to spend 20 minutes tonight just talking? No phones, just us. What do you think?",
+            why: "Reassurance first. Specific feeling. You see him positively. Clear request. He has input."
+          }}
+        />
+
+        <ScriptComparison
+          situation="Situation 3: When You Want Physical Intimacy"
           before={{
             label: "What You're Sending Now (The Trigger)",
             text: "We never have sex anymore. It's been three weeks. Is there something wrong with me? Why don't you want me?",
@@ -432,46 +492,109 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-5xl serif text-center mb-12 font-bold">Everything Inside The Connection Code</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="space-y-12 text-left">
             <div>
-              <h3 className="text-xl font-bold mb-6 text-[#E67E7E] uppercase tracking-widest">Part I: The Foundation</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <span className="font-bold text-gray-300">01</span>
-                  <p className="text-gray-700">Why Traditional Advice Keeps You Stuck (The Neuroscience Truth)</p>
+              <h3 className="text-2xl font-bold mb-6 text-[#E67E7E] uppercase tracking-widest border-b border-gray-100 pb-2">Part I: The Foundation</h3>
+              <ul className="space-y-6">
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">01</span>
+                  <div>
+                    <p className="font-bold text-gray-900 text-lg">Why Traditional Advice Keeps You Stuck</p>
+                    <p className="text-gray-600">The neuroscience truth about male vs. female communication and why "emotional labor" is destroying your connection.</p>
+                  </div>
                 </li>
-                <li className="flex gap-3">
-                  <span className="font-bold text-gray-300">02</span>
-                  <p className="text-gray-700">The 5 Communication Mistakes That Push Him Away</p>
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">02</span>
+                  <div>
+                    <p className="font-bold text-gray-900 text-lg">The 5 Communication Mistakes That Push Him Away</p>
+                    <p className="text-gray-600">Why "processing out loud" backfires and why "I feel" statements often shut him down.</p>
+                  </div>
                 </li>
-                <li className="flex gap-3">
-                  <span className="font-bold text-gray-300">03</span>
-                  <p className="text-gray-700">The SPARK Framework: Your New Blueprint</p>
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">03</span>
+                  <div>
+                    <p className="font-bold text-gray-900 text-lg">The SPARK Framework: Your New Blueprint</p>
+                    <p className="text-gray-600">The complete 5-step system that works with male psychology to create safety and connection.</p>
+                  </div>
                 </li>
               </ul>
             </div>
+
             <div>
-              <h3 className="text-xl font-bold mb-6 text-[#E67E7E] uppercase tracking-widest">Part II: The Scripts (87 Total)</h3>
+              <h3 className="text-2xl font-bold mb-6 text-[#E67E7E] uppercase tracking-widest border-b border-gray-100 pb-2">Part II: The Scripts (87 Total)</h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">04</span>
+                  <div>
+                    <p className="font-bold text-gray-900">Appreciation Scripts</p>
+                    <p className="text-sm text-gray-600">Make him feel like a hero again.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">05</span>
+                  <div>
+                    <p className="font-bold text-gray-900">Vulnerability Scripts</p>
+                    <p className="text-sm text-gray-600">Share fears without overwhelming him.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">06</span>
+                  <div>
+                    <p className="font-bold text-gray-900">Playful Scripts</p>
+                    <p className="text-sm text-gray-600">Reignite attraction and fun.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">07</span>
+                  <div>
+                    <p className="font-bold text-gray-900">Conflict Resolution Scripts</p>
+                    <p className="text-sm text-gray-600">Solve problems without fighting.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">08</span>
+                  <div>
+                    <p className="font-bold text-gray-900">Intimacy Scripts</p>
+                    <p className="text-sm text-gray-600">Reignite physical connection without pressure.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-[#E67E7E] uppercase tracking-widest border-b border-gray-100 pb-2">Part III: The Implementation</h3>
+              <ul className="space-y-6">
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">09</span>
+                  <div>
+                    <p className="font-bold text-gray-900 text-lg">Handling His Initial Resistance</p>
+                    <p className="text-gray-600">What to do when he's skeptical and the "consistency strategy" that builds trust.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="font-bold text-gray-300 text-xl">10</span>
+                  <div>
+                    <p className="font-bold text-gray-900 text-lg">Your 30-Day Marriage Revival Action Plan</p>
+                    <p className="text-gray-600">Day-by-day guide: Week 1 Foundation, Week 2 Vulnerability, Week 3 Playfulness, Week 4 Integration.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-rose-50 p-6 rounded-2xl border border-rose-100">
+              <h3 className="text-xl font-bold mb-4 text-[#E67E7E] uppercase tracking-widest">🎁 Included Bonuses</h3>
               <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <span className="font-bold text-gray-300">04</span>
-                  <p className="text-gray-700">Appreciation Scripts That Make Him Feel Like A Hero</p>
+                <li className="flex gap-3 items-start">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <p className="text-gray-800"><span className="font-bold">Bonus 1: Reading His Responses.</span> Decode what he really means vs what he says.</p>
                 </li>
-                <li className="flex gap-3">
-                  <span className="font-bold text-gray-300">05</span>
-                  <p className="text-gray-700">Vulnerability Scripts That Deepen Your Bond</p>
+                <li className="flex gap-3 items-start">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <p className="text-gray-800"><span className="font-bold">Bonus 2: Personality Type Adaptation.</span> Customize scripts for the Analyst, Supporter, Achiever, or Connector.</p>
                 </li>
-                <li className="flex gap-3">
-                  <span className="font-bold text-gray-300">06</span>
-                  <p className="text-gray-700">Playful Scripts That Reignite Attraction</p>
-                </li>
-                <li className="flex gap-3">
-                  <span className="font-bold text-gray-300">07</span>
-                  <p className="text-gray-700">Conflict Resolution Scripts (No More Fighting)</p>
-                </li>
-                <li className="flex gap-3">
-                  <span className="font-bold text-gray-300">08</span>
-                  <p className="text-gray-700">Intimacy Scripts That Bring Back Passion</p>
+                <li className="flex gap-3 items-start">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <p className="text-gray-800"><span className="font-bold">Bonus 3: Advanced Relationship Repair.</span> When to seek professional help (addiction, betrayal, etc).</p>
                 </li>
               </ul>
             </div>
@@ -608,6 +731,10 @@ const App: React.FC = () => {
             answer="Learning a new language to express your real feelings isn't manipulative—it's strategic. You're still you, and your feelings are real. You're just learning to express them in a language he can actually hear."
           />
           <AccordionItem
+            question="What if he asks why I'm suddenly communicating differently?"
+            answer='Great question. You can be honest: "I learned that I was accidentally communicating in ways that made you defensive, even when I didn t mean to. I m trying to get better at this." He will almost always appreciate the effort.'
+          />
+          <AccordionItem
             question="Is this just for texting or in-person too?"
             answer="The framework works for ALL communication. We call it Texting Scripts because that's where modern tension often starts, but the neuroscience applies whether you're texting or talking face-to-face."
           />
@@ -617,11 +744,35 @@ const App: React.FC = () => {
           />
           <AccordionItem
             question="What format is this in?"
-            answer="It's a digital PDF system. You get instant access immediately after purchase. You can read it on your phone, tablet, computer, or print it out."
+            answer="It's a digital PDF system ('The Connection Code' ebook). You get instant access immediately after purchase. You can read it on your phone, tablet, computer, or print it out."
+          />
+          <AccordionItem
+            question="Can I share this with friends?"
+            answer="The Connection Code is licensed for individual use. Because every marriage is unique, they'll need the complete system (including all bonuses) to get the best results."
           />
           <AccordionItem
             question="What if we have really serious problems?"
             answer="This works for 80% of struggling marriages (communication breakdown). However, if there is active abuse, addiction, or unrepentant infidelity, please seek professional intervention. The book covers how to know the difference."
+          />
+          <AccordionItem
+            question="What if my husband finds this?"
+            answer="Most husbands, if they read this, would say 'I wish she'd learned this years ago.' You can be transparent: 'I'm learning how to communicate in ways that work better for both of us.'"
+          />
+          <AccordionItem
+            question="Is there a physical book?"
+            answer="Currently, it is digital-only to provide instant access and keep the price at $19 (vs $35+ for print). You can print the Quick Reference Cards to keep on hand."
+          />
+          <AccordionItem
+            question="What if I'm not tech-savvy?"
+            answer="If you can check email, you can access this. You'll receive a download link immediately after purchase. Just click it to open the PDF."
+          />
+          <AccordionItem
+            question="What makes you qualified to teach this?"
+            answer="I'm not a PhD researcher. I'm a woman who failed at a 6-year relationship, then spent years testing and refining these techniques to save my own marriage. My qualification is results: my thriving 7-year marriage and hundreds of success stories from women just like you."
+          />
+          <AccordionItem
+            question="Okay, I'm convinced. What's my next step?"
+            answer="Click the button below. Complete the simple checkout. Get instant access. Start using the scripts tonight."
           />
         </div>
       </Section>
