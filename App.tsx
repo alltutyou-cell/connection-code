@@ -69,6 +69,20 @@ const AccordionItem: React.FC<{ question: string; answer: React.ReactNode }> = (
 
 const App: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [showStickyBar, setShowStickyBar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowStickyBar(window.scrollY > 600);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setIsNavOpen(false);
+  };
 
   const testimonials: Testimonial[] = [
     {
@@ -805,8 +819,44 @@ const App: React.FC = () => {
           </div>
         </div>
       </footer>
+
+      {/* Sticky Bottom CTA Bar */}
+      <div className={`fixed bottom-0 left-0 right-0 bg-white border-t border-rose-100 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] p-4 transition-transform duration-300 z-50 ${showStickyBar ? 'translate-y-0' : 'translate-y-full'}`}>
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
+          {/* Text (Hidden on small mobile to save space) */}
+          <div className="hidden md:flex flex-col">
+            <span className="font-bold text-gray-900 text-sm">The Connection Code™</span>
+            <span className="text-xs text-green-600 font-medium">Instant Digital Access</span>
+          </div>
+
+          {/* Price & Button */}
+          <div className="flex items-center gap-4 w-full md:w-auto justify-between md:justify-end">
+            <div className="flex flex-col items-end md:hidden">
+              <span className="text-[10px] text-gray-500 line-through">$252</span>
+              <span className="font-bold text-gray-900 text-xl leading-none">$19</span>
+            </div>
+
+            <div className="hidden md:block text-right mr-2">
+              <span className="block text-xs text-gray-400 line-through">$252</span>
+              <span className="block font-black text-2xl text-gray-900 leading-none">$19</span>
+            </div>
+
+            <a
+              href="#order"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('order');
+              }}
+              className="coral-button text-white px-6 py-3 rounded-xl font-bold text-base md:text-lg shadow-lg flex-grow md:flex-grow-0 text-center animate-pulse-slow whitespace-nowrap"
+            >
+              Transform My Marriage
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default App;
+
