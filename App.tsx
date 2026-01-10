@@ -132,36 +132,37 @@ const App: React.FC = () => {
       )}
 
       {/* Module 1: Hero */}
-      <header className="pt-24 md:pt-32 pb-12 px-6 bg-gradient-to-b from-white to-[#FAF9F6] text-center overflow-hidden min-h-[90vh] flex items-center">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
-          <div className="flex-1 text-left md:pr-8 animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-rose-50 text-[#E67E7E] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-rose-100">
-              <Sparkles className="w-4 h-4" />
-              New Research-Based Method
+      {/* Module 1: Hero */}
+      <header className="pt-20 md:pt-28 pb-8 px-6 bg-gradient-to-b from-white to-[#FAF9F6] text-center overflow-hidden flex items-center md:h-[calc(100vh-80px)]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 text-left">
+          <div className="flex-1 md:pr-4 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 bg-rose-50 text-[#E67E7E] px-3 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4 border border-rose-100">
+              <Sparkles className="w-3 h-3" />
+              New Method
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl serif font-bold leading-[1.1] mb-6 text-gray-900">
-              The 'Backwards' Texting Method That Made My Distant Husband <span className="italic text-[#E67E7E] relative">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl serif font-bold leading-[1.1] mb-4 text-gray-900 tracking-tight">
+              The 'Backwards' Texting Method That Made My Distant Husband <span className="italic text-[#E67E7E] relative whitespace-nowrap">
                 Fall In Love With Me Again
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-rose-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" /></svg>
+                <svg className="absolute w-full h-2 -bottom-1 left-0 text-rose-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" /></svg>
               </span>... In 19 Days
             </h1>
-            <p className="text-lg md:text-2xl text-gray-600 mb-6 leading-relaxed font-light">
+            <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed font-light max-w-xl">
               The exact word-for-word scripts that transformed my cold, one-word-text marriage into the passionate connection I thought was gone forever.
-              <span className="block mt-2 text-sm md:text-base text-gray-500 italic">(Even after therapy, date nights, and romance books all failed)</span>
+              <span className="block mt-1 text-sm text-gray-400 italic">(Even after therapy, date nights, and romance books all failed)</span>
             </p>
-            <div className="flex flex-col sm:flex-row items-start gap-4">
-              <a href="#order" className="coral-button text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl w-full sm:w-auto text-center hover:scale-105 transition-transform flex items-center justify-center gap-2">
-                GET INSTANT ACCESS - JUST $19 <ArrowRight className="w-5 h-5" />
+            <div className="flex flex-col sm:flex-row items-start gap-3">
+              <a href="#order" className="coral-button text-white px-6 py-3 rounded-lg font-bold text-base shadow-lg w-full sm:w-auto text-center hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                GET INSTANT ACCESS - JUST $19 <ArrowRight className="w-4 h-4" />
               </a>
-              <div className="flex items-center justify-center gap-2 text-gray-500 text-sm h-full py-4 px-2 w-full sm:w-auto">
+              <div className="flex items-center justify-center gap-2 text-gray-500 text-xs h-full py-3 px-2 w-full sm:w-auto">
                 <ShieldCheck className="w-4 h-4 text-green-500" />
                 <span>60-Day Money-Back Guarantee</span>
               </div>
             </div>
           </div>
-          <div className="flex-1 flex justify-center md:justify-end relative animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="flex-1 flex justify-center md:justify-end relative animate-fade-in-up scale-90 md:scale-100 origin-center" style={{ animationDelay: '0.2s' }}>
             {/* Abstract blob background */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-gradient-to-tr from-rose-100/40 to-blue-50/40 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-rose-100/40 to-blue-50/40 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
             <BookMockup />
           </div>
         </div>
