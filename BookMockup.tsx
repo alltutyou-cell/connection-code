@@ -1,53 +1,34 @@
-
 import React from 'react';
 
 const BookMockup: React.FC = () => {
     return (
-        <div className="relative group w-[220px] md:w-[260px] mx-auto transition-transform duration-500 hover:scale-[1.02] my-8 perspective-1000">
-            {/* The Book Itself */}
-            <div className="relative transform-style-3d rotate-y-[-15deg] rotate-x-[5deg] group-hover:rotate-y-[-5deg] group-hover:rotate-x-[0deg] transition-all duration-700 ease-out shadow-[20px_20px_50px_rgba(0,0,0,0.3)] bg-gray-900 rounded-r-md rounded-l-sm aspect-[2/3.1]">
+        <div className="relative group perspective-1000 w-[220px] md:w-[260px] mx-auto transition-transform duration-500 hover:scale-105 my-8">
+            {/* Book Container with 3D Effect - Enforcing aspect ratio 2:3 */}
+            <div className="relative transform-style-3d rotate-y-[-20deg] rotate-x-[10deg] group-hover:rotate-y-[-15deg] group-hover:rotate-x-[5deg] transition-all duration-500 ease-out shadow-2xl rounded-r-lg aspect-[2/3.1]">
 
-                {/* 1. Spine (Left Edge) - Darker shade of cover to simulate wrapping */}
-                <div className="absolute top-0 bottom-0 left-0 w-4 bg-gray-800 transform -translate-x-full origin-right rotate-y-[-90deg] rounded-l-sm border-l border-white/10 z-10 flex flex-col justify-between overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
-                    {/* Creating a 'curved' look for the spine */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/20"></div>
-                </div>
-
-                {/* 2. Front Cover */}
-                <div className="relative w-full h-full z-20 bg-white rounded-r-md rounded-l-sm overflow-hidden border-t border-r border-white/20">
+                {/* Front Cover */}
+                <div className="relative z-20 h-full w-full rounded-r-lg overflow-hidden shadow-xl bg-white">
                     <img
                         src="/book-cover.jpg"
                         alt="The Connection Code Book"
-                        className="w-full h-full object-cover rounded-r-md rounded-l-sm"
+                        className="w-full h-full object-cover rounded-r-sm"
                     />
-
-                    {/* Realism: Spine Fold/Crease */}
-                    <div className="absolute top-0 bottom-0 left-[2px] w-[2px] bg-white/30 blur-[1px]"></div>
-                    <div className="absolute top-0 bottom-0 left-[6px] w-[1px] bg-black/20 blur-[1px]"></div>
-
-                    {/* Realism: Gloss/Sheen Gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/30 pointer-events-none mix-blend-soft-light"></div>
-
-                    {/* Realism: Left Edge Shadow (Curvature) */}
-                    <div className="absolute top-0 bottom-0 left-0 w-6 bg-gradient-to-r from-black/40 via-transparent to-transparent pointer-events-none"></div>
+                    {/* Sheen/Highlight overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none mix-blend-overlay"></div>
+                    <div className="absolute inset-y-0 left-0 w-2 md:w-3 bg-gradient-to-r from-black/20 to-transparent pointer-events-none"></div>
                 </div>
 
-                {/* 3. Pages (Right Side Thickness) */}
-                <div className="absolute top-[3px] bottom-[3px] right-0 w-[12px] bg-[#fdfdfd] transform translate-x-full origin-left rotate-y-[90deg] shadow-sm border-r border-gray-200 z-10">
-                    {/* Page texture lines */}
-                    <div className="w-full h-full bg-[repeating-linear-gradient(90deg,transparent,transparent_1px,#e5e5e5_2px)] opacity-50"></div>
+                {/* Book Spine (simulated) - Darkened to fix "white strip" complaint */}
+                <div className="absolute top-[2px] bottom-[2px] left-0 w-6 md:w-8 bg-gray-900 -translate-x-full origin-right transform-style-3d rotate-y-[-90deg] border-l border-gray-800 shadow-inner z-10 flex items-center justify-center overflow-hidden rounded-l-sm">
+                    <div className="w-full h-full bg-gradient-to-r from-black/40 via-white/10 to-black/40 opacity-50"></div>
                 </div>
 
-                {/* 4. Pages (Bottom Thickness) - Visible due to tilt */}
-                <div className="absolute bottom-0 left-[3px] right-0 h-[12px] bg-[#fdfdfd] transform translate-y-full origin-top rotate-x-[-90deg] shadow-sm border-b border-gray-200 rounded-bl-sm">
-                    <div className="w-full h-full bg-[repeating-linear-gradient(0deg,transparent,transparent_1px,#e5e5e5_2px)] opacity-50"></div>
-                </div>
+                {/* Pages (Side View) */}
+                <div className="absolute top-[3px] bottom-[3px] right-0 w-8 md:w-10 bg-white -translate-z-[2px] translate-x-[6px] rotate-y-[90deg] origin-left shadow-sm border border-gray-100 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlNWU1ZTUiLz48L3N2Zz4=')]"></div>
 
+                {/* Back Shadow */}
+                <div className="absolute top-10 left-10 w-full h-full bg-black/30 blur-2xl -z-10 translate-z-[-30px] rounded-lg"></div>
             </div>
-
-            {/* 5. Drop Shadow (Soft, Grounding) */}
-            <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[80%] h-[20px] bg-black/40 blur-xl rounded-full opacity-60 group-hover:opacity-40 group-hover:scale-110 transition-all duration-700"></div>
         </div>
     );
 };
