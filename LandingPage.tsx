@@ -364,16 +364,31 @@ const LandingPage: React.FC = () => {
           <div className="bg-green-50 p-8 rounded-3xl border border-green-100">
             <h3 className="font-bold text-green-800 mb-4 border-b border-green-200 pb-2">✅ THE SPARK APPROACH</h3>
             <p className="text-sm font-bold text-green-600 uppercase tracking-widest mb-2">Creates Safety & Connection</p>
-            <div className="space-y-3 text-gray-700">
-              <p><span className="font-bold text-green-700">S:</span> "I want to share something and get your thoughts."</p>
-              <p><span className="font-bold text-green-700">P:</span> "I miss our connection time together."</p>
-              <p><span className="font-bold text-green-700">A:</span> "I know you're working hard for our future, and I appreciate that."</p>
-              <p><span className="font-bold text-green-700">R:</span> "Would you be willing to go for a 30-minute walk with me on Sunday?"</p>
-              <p><span className="font-bold text-green-700">K:</span> "Thanks for listening. Let me know what you think."</p>
-            </div>
-            <div className="bg-white p-4 rounded-xl text-sm text-gray-500 border border-green-100 mt-4">
-              <span className="font-bold block mb-1">What Happens In His Brain:</span>
-              Safe. Clear. Respected. He understands exactly what you need and feels like a hero for saying yes.
+            <div className="space-y-4 text-gray-800">
+              <div>
+                <p className="font-medium mb-1"><span className="font-extrabold text-green-700">S - Set the Temperature:</span> "I want to share something with you and get your thoughts."</p>
+                <p className="text-xs font-bold text-green-600 uppercase tracking-wide bg-green-100/50 inline-block px-2 py-0.5 rounded ml-6">His Brain: "Okay, this is safe. She values my input."</p>
+              </div>
+
+              <div>
+                <p className="font-medium mb-1"><span className="font-extrabold text-green-700">P - Present One Point:</span> "I miss our connection time together."</p>
+                <p className="text-xs font-bold text-green-600 uppercase tracking-wide bg-green-100/50 inline-block px-2 py-0.5 rounded ml-6">His Brain: "One specific thing. I can process this."</p>
+              </div>
+
+              <div>
+                <p className="font-medium mb-1"><span className="font-extrabold text-green-700">A - Acknowledge His Perspective:</span> "I know you're working hard for our future, and I appreciate that."</p>
+                <p className="text-xs font-bold text-green-600 uppercase tracking-wide bg-green-100/50 inline-block px-2 py-0.5 rounded ml-6">His Brain: "She sees me as good. This isn't criticism."</p>
+              </div>
+
+              <div>
+                <p className="font-medium mb-1"><span className="font-extrabold text-green-700">R - Request Specific Action:</span> "Would you be willing to go for a 30-minute walk with me on Sunday mornings?"</p>
+                <p className="text-xs font-bold text-green-600 uppercase tracking-wide bg-green-100/50 inline-block px-2 py-0.5 rounded ml-6">His Brain: "Clear request. I can say yes or no. I can succeed at this."</p>
+              </div>
+
+              <div>
+                <p className="font-medium mb-1"><span className="font-extrabold text-green-700">K - Keep Door Open:</span> "Thanks for listening. Let me know what you think."</p>
+                <p className="text-xs font-bold text-green-600 uppercase tracking-wide bg-green-100/50 inline-block px-2 py-0.5 rounded ml-6">His Brain: "No pressure for immediate response. I have agency here."</p>
+              </div>
             </div>
           </div>
         </div>
