@@ -148,7 +148,7 @@ const LandingPage: React.FC = () => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
           <span className="text-sm font-medium text-gray-500">Only $19</span>
-          <a href="#order" className="coral-button text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+          <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
             TRANSFORM MY MARRIAGE
           </a>
         </div>
@@ -198,7 +198,7 @@ const LandingPage: React.FC = () => {
               <span className="block mt-1 text-xs md:text-sm text-gray-400 italic">(Even after therapy, date nights, and romance books all failed)</span>
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-3">
-              <a href="#order" className="coral-button text-white px-6 py-3 rounded-lg font-bold text-base shadow-lg w-full sm:w-auto text-center hover:scale-105 transition-transform flex items-center justify-center gap-2">
+              <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white px-6 py-3 rounded-lg font-bold text-base shadow-lg w-full sm:w-auto text-center hover:scale-105 transition-transform flex items-center justify-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
                 GET INSTANT ACCESS - JUST $19 <ArrowRight className="w-4 h-4" />
               </a>
               <div className="flex items-center justify-center gap-2 text-gray-500 text-xs h-full py-3 px-2 w-full sm:w-auto">
@@ -486,7 +486,7 @@ const LandingPage: React.FC = () => {
 
           <div className="mt-16 text-center">
             <p className="text-xl font-serif italic text-gray-800 mb-8 max-w-2xl mx-auto">This isn't fantasy. This is what happens when you stop fighting his nervous system and start working with it.</p>
-            <a href="#order" className="coral-button text-white px-10 py-5 rounded-xl font-bold text-xl shadow-xl inline-block hover:shadow-2xl transition-all hover:-translate-y-1">
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white px-10 py-5 rounded-xl font-bold text-xl shadow-xl inline-block hover:shadow-2xl transition-all hover:-translate-y-1" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
               YES, I WANT THIS FUTURE
             </a>
           </div>
@@ -722,7 +722,7 @@ const LandingPage: React.FC = () => {
               <p className="text-gray-500 font-medium">One-time payment. Instant Access.</p>
             </div>
 
-            <a href="#" className="coral-button text-white px-10 py-6 rounded-2xl font-bold text-xl md:text-3xl shadow-2xl w-full block mb-6 animate-pulse-slow hover:scale-[1.02] transition-transform">
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white px-10 py-6 rounded-2xl font-bold text-xl md:text-3xl shadow-2xl w-full block mb-6 animate-pulse-slow hover:scale-[1.02] transition-transform" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
               TRANSFORM MY MARRIAGE NOW
             </a>
 
@@ -785,7 +785,7 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
-          <a href="#order" className="coral-button text-white px-12 py-5 rounded-full font-bold text-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 block md:inline-block w-full md:w-auto">
+          <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white px-12 py-5 rounded-full font-bold text-xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 block md:inline-block w-full md:w-auto" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
             TRANSFORM MY MARRIAGE FOR $19
           </a>
           <p className="mt-4 text-sm text-gray-500">Instant Digital Download. Start in 2 minutes.</p>
