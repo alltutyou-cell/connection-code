@@ -390,14 +390,54 @@ const LandingPage: React.FC = () => {
                 <p className="text-xs font-bold text-green-600 uppercase tracking-wide bg-green-100/50 inline-block px-2 py-0.5 rounded ml-6">His Brain: "No pressure for immediate response. I have agency here."</p>
               </div>
             </div>
+
+            <div className="bg-white p-6 rounded-xl text-sm text-gray-600 border border-green-100 mt-8 shadow-sm">
+              <span className="font-bold block mb-3 text-base text-green-800">What Happens In His Brain:</span>
+              <ul className="space-y-2">
+                <li className="flex gap-2 items-start"><span className="text-green-500 font-bold">→</span> His nervous system stays calm and receptive</li>
+                <li className="flex gap-2 items-start"><span className="text-green-500 font-bold">→</span> He understands exactly what you need</li>
+                <li className="flex gap-2 items-start"><span className="text-green-500 font-bold">→</span> He feels respected and valued, not criticized</li>
+                <li className="flex gap-2 items-start"><span className="text-green-500 font-bold">→</span> His problem-solving abilities activate (instead of shutting down)</li>
+                <li className="flex gap-2 items-start"><span className="text-green-500 font-bold">→</span> He actually wants to help because it feels good to do so</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div className="mt-16 bg-rose-50 rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold mb-4">Why SPARK works when therapy fails:</h3>
-          <p className="text-lg text-gray-700 italic">
-            "It works WITH male psychology instead of fighting against it. It creates safety instead of triggering defensive responses. It makes him feel like the hero, not the problem."
-          </p>
+        <div className="mt-20 max-w-5xl mx-auto space-y-16">
+          <div className="text-center">
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">See the difference?</h3>
+            <p className="text-2xl text-gray-700 italic font-serif">Same need. Same desire for connection.<br />Completely different neurological response.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+            <div className="bg-rose-50 p-8 md:p-10 rounded-[2.5rem] border border-rose-100 shadow-lg">
+              <h4 className="font-bold text-xl mb-8 text-gray-900">This is why SPARK works when therapy, books, and date nights have failed:</h4>
+              <ul className="space-y-5">
+                <li className="flex gap-4 items-start"><div className="bg-[#E67E7E] rounded-full p-1 mt-1 shrink-0"><CheckCircle2 className="w-3 h-3 text-white" /></div> <span className="text-gray-800 font-medium">SPARK works CONSTRUCTIVELY with male psychology instead of fighting against it</span></li>
+                <li className="flex gap-4 items-start"><div className="bg-[#E67E7E] rounded-full p-1 mt-1 shrink-0"><CheckCircle2 className="w-3 h-3 text-white" /></div> <span className="text-gray-800 font-medium">SPARK creates safety instead of triggering defensive responses</span></li>
+                <li className="flex gap-4 items-start"><div className="bg-[#E67E7E] rounded-full p-1 mt-1 shrink-0"><CheckCircle2 className="w-3 h-3 text-white" /></div> <span className="text-gray-800 font-medium">SPARK is specific and actionable instead of vague and overwhelming</span></li>
+                <li className="flex gap-4 items-start"><div className="bg-[#E67E7E] rounded-full p-1 mt-1 shrink-0"><CheckCircle2 className="w-3 h-3 text-white" /></div> <span className="text-gray-800 font-medium">SPARK makes him feel like the hero instead of the problem</span></li>
+              </ul>
+            </div>
+
+            <div className="bg-[#FAF9F6] p-8 md:p-10 rounded-[2.5rem] border border-gray-200 shadow-md">
+              <h4 className="font-bold text-xl mb-6 text-gray-900">And here's the best part:</h4>
+              <p className="mb-6 text-gray-600 font-medium">Once you understand the framework, you can apply it to <span className="italic font-bold text-gray-900">ANY</span> situation:</p>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex gap-3 items-center"><span className="text-[#E67E7E] font-bold text-xl">→</span> When you need more help around the house</li>
+                <li className="flex gap-3 items-center"><span className="text-[#E67E7E] font-bold text-xl">→</span> When you're craving physical intimacy</li>
+                <li className="flex gap-3 items-center"><span className="text-[#E67E7E] font-bold text-xl">→</span> When you want deeper emotional connection</li>
+                <li className="flex gap-3 items-center"><span className="text-[#E67E7E] font-bold text-xl">→</span> When you need to resolve conflict</li>
+                <li className="flex gap-3 items-center"><span className="text-[#E67E7E] font-bold text-xl">→</span> When you just want to feel appreciated and seen</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center max-w-3xl mx-auto bg-gray-900 p-8 rounded-2xl text-white shadow-xl">
+            <p className="text-xl font-medium mb-3">The scripts I'm about to share with you are based on this exact framework.</p>
+            <p className="text-lg text-gray-300">Word-for-word conversations that work with his nervous system instead of against it. <span className="text-[#E67E7E] font-bold">And they work fast.</span></p>
+          </div>
         </div>
       </Section>
 
