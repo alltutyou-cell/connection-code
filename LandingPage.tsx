@@ -188,7 +188,7 @@ const LandingPage: React.FC = () => {
               New Method
             </div>
             <h1 className="text-2xl md:text-4xl lg:text-6xl serif font-bold leading-[1.1] mb-3 text-gray-900 tracking-tight">
-              The 'Backwards' Texting Method That Made My Distant Husband <span className="italic text-[#E67E7E] relative whitespace-nowrap">
+              The 'SPARK' Texting Method That Made My Distant Husband <span className="italic text-[#E67E7E] relative whitespace-nowrap">
                 Fall In Love With Me Again
                 <svg className="absolute w-full h-2 -bottom-1 left-0 text-rose-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" /></svg>
               </span>... In 19 Days
@@ -304,7 +304,7 @@ const LandingPage: React.FC = () => {
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1 order-2 md:order-1">
             <div className="bg-rose-100 text-[#E67E7E] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">My Story</div>
-            <h2 className="text-3xl md:text-5xl serif mb-6 font-bold">How I Accidentally Discovered The "Backwards" Method</h2>
+            <h2 className="text-3xl md:text-5xl serif mb-6 font-bold">How I Accidentally Discovered The "SPARK" Method</h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>Seven years ago, I was convinced I was completely broken when it came to love. I had just ended a six-year relationship where emotional conversations always ended in defensiveness or silence. I blamed myself.</p>
               <p>Then I met my now-husband. Three months in, he made a comment that hit a nerve. In my past, I would have fought or shut down. Instead, I paused and tried something different. A different set of words. A different tone.</p>
