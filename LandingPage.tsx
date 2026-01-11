@@ -299,31 +299,7 @@ const LandingPage: React.FC = () => {
         </div>
       </Section>
 
-      {/* Module 5: Origin Story */}
-      <Section className="bg-[#FAF9F6]">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center">
-          <div className="flex-1 order-2 md:order-1">
-            <div className="bg-rose-100 text-[#E67E7E] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">My Story</div>
-            <h2 className="text-3xl md:text-5xl serif mb-6 font-bold">How I Accidentally Discovered The "SPARK" Method</h2>
-            <div className="space-y-6 text-gray-700 leading-relaxed">
-              <p>Seven years ago, I was convinced I was completely broken when it came to love. I had just ended a six-year relationship where emotional conversations always ended in defensiveness or silence. I blamed myself.</p>
-              <p>Then I met my now-husband. Three months in, he made a comment that hit a nerve. In my past, I would have fought or shut down. Instead, I paused and tried something different. A different set of words. A different tone.</p>
-              <p className="text-xl font-serif italic text-gray-900 border-l-4 border-[#E67E7E] pl-4 py-2">Instead of "You don't support my dreams," I said: "When you said that, I felt small. Help me understand what you meant."</p>
-              <p>His whole body language changed. Instead of getting defensive, <span className="font-bold text-[#E67E7E]">he leaned in.</span></p>
-              <p>That conversation taught us both how to navigate every difficult moment since. We've been together for seven years now, thriving not because we are "lucky", but because we communicate systematically.</p>
-            </div>
-          </div>
-          <div className="flex-1 order-1 md:order-2 flex justify-center">
-            <div className="bg-white p-4 rounded-3xl shadow-xl rotate-2 hover:rotate-0 transition-all duration-500">
-              {/* Placeholder for Jul's image */}
-              <div className="w-72 h-96 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-400 text-sm font-medium relative overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                <span className="z-10">[Jul Tabacu Photo]</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
+
 
       {/* Module 6: SPARK Framework */}
       <Section id="framework" className="bg-white">
