@@ -89,7 +89,7 @@ const LandingPage: React.FC = () => {
     {
       name: "Sarah T.", age: 38, location: "Pittsburgh, PA", marriedYears: 12,
       title: "He actually APOLOGIZED for being distant...",
-      content: "I tried your 'vulnerability without pressure' script from Chapter 5, and I'm not kidding , within 20 minutes he opened up about work stress he's been carrying for months. He actually CRIED and apologized for being distant. We talked for 2 hours. I can't remember the last time we talked for 2 hours about anything besides the kids' schedules.",
+      content: "I tried one of the vulnerability scripts, and I'm not kidding , within 20 minutes he opened up about work stress he's been carrying for months. He actually CRIED and apologized for being distant. We talked for 2 hours. I can't remember the last time we talked for 2 hours about anything besides the kids' schedules.",
       image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
@@ -101,7 +101,7 @@ const LandingPage: React.FC = () => {
     {
       name: "Amanda K.", age: 41, location: "Denver, CO", marriedYears: 14,
       title: "My 8-year-old noticed the change...",
-      content: "The playful scripts in Chapter 6 felt silly at first, but I tried them anyway because I was desperate. Within a week, my husband started actually laughing again. Last night my daughter said 'You and daddy are being weird and giggly again like you used to be.' My EIGHT-YEAR-OLD noticed we're happy again. If that's not proof this works, I don't know what is.",
+      content: "The playful scripts felt silly at first, but I tried them anyway because I was desperate. Within a week, my husband started actually laughing again. Last night my daughter said 'You and daddy are being weird and giggly again like you used to be.' My EIGHT-YEAR-OLD noticed we're happy again. If that's not proof this works, I don't know what is.",
       image: "https://randomuser.me/api/portraits/women/32.jpg"
     },
     {
@@ -113,7 +113,7 @@ const LandingPage: React.FC = () => {
     {
       name: "Michelle S.", age: 39, location: "Portland, OR", marriedYears: 15,
       title: "He planned a date night WITHOUT me asking...",
-      content: "I haven't felt desired by my husband in probably 5 years. Sex was obligatory. Affection was nonexistent. I used the intimacy scripts from Chapter 8 and almost immediately he started initiating physical touch again. Not even sexual , just touching my back when he walks by, holding my hand while we watch TV. Last week he PLANNED A DATE NIGHT without me asking or suggesting. He hasn't done that in literally 7 years. I cried happy tears in the restaurant bathroom.",
+      content: "I haven't felt desired by my husband in probably 5 years. Sex was obligatory. Affection was nonexistent. I used the intimacy scripts and almost immediately he started initiating physical touch again. Not even sexual , just touching my back when he walks by, holding my hand while we watch TV. Last week he PLANNED A DATE NIGHT without me asking or suggesting. He hasn't done that in literally 7 years. I cried happy tears in the restaurant bathroom.",
       image: "https://randomuser.me/api/portraits/women/89.jpg"
     },
     {
@@ -131,7 +131,7 @@ const LandingPage: React.FC = () => {
     {
       name: "Katherine L.", age: 44, location: "Seattle WA", marriedYears: 15,
       title: "I was planning my exit strategy... now I'm planning our anniversary trip",
-      content: "I had already started looking at apartments. I was done. Fifteen years of marriage and I felt like I was living with a stranger who occasionally grunted responses at me. I downloaded this book thinking 'one last attempt before I call it quits.' I used the vulnerability script from Chapter 5 and for the first time in YEARS he actually opened up about how stressed and overwhelmed he's been feeling. We talked for over an hour - real talking, not logistics. Three weeks in and he's already suggested we plan a special trip for our anniversary next month. I literally had one foot out the door and now I'm excited about our future together again.",
+      content: "I had already started looking at apartments. I was done. Fifteen years of marriage and I felt like I was living with a stranger who occasionally grunted responses at me. I downloaded this book thinking 'one last attempt before I call it quits.' I used one of the vulnerability scripts and for the first time in YEARS he actually opened up about how stressed and overwhelmed he's been feeling. We talked for over an hour - real talking, not logistics. Three weeks in and he's already suggested we plan a special trip for our anniversary next month. I literally had one foot out the door and now I'm excited about our future together again.",
       image: "https://randomuser.me/api/portraits/women/22.jpg"
     }
   ];
