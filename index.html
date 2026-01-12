@@ -1,38 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Connection Code - Save Your Marriage</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #FAF9F6;
-        color: #1a1a1a;
-      }
-      .serif {
-        font-family: 'Playfair Display', serif;
-      }
-      .gradient-bg {
-        background: linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 100%);
-      }
-      .coral-button {
-        background-color: #E67E7E;
-        transition: all 0.3s ease;
-      }
-      .coral-button:hover {
-        background-color: #D46B6B;
-        transform: translateY(-1px);
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Connection Code - Save Your Marriage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAF9F6;
+      color: #1a1a1a;
+    }
+
+    .serif {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 100%);
+    }
+
+    .coral-button {
+      background-color: #E67E7E;
+      transition: all 0.3s ease;
+    }
+
+    .coral-button:hover {
+      background-color: #D46B6B;
+      transform: translateY(-1px);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -43,11 +50,35 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1483887033096375');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <!-- Meta Pixel Noscript -->
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1483887033096375&ev=PageView&noscript=1" /></noscript>
+
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
   <script type="text/javascript" src="https://assets.checkoutpage.com/overlay.js" async></script>
 </body>
+
 </html>
