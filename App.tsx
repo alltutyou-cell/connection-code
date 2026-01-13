@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import LandingPage from './LandingPage';
+import InfoPage from './InfoPage';
 import { TermsOfService, PrivacyPolicy, Support } from './Pages';
 
 // Scroll to top on route change
@@ -20,6 +21,7 @@ const App: React.FC = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/info" element={<InfoPage />} />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/support" element={<Support />} />
