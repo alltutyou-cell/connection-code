@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-// Deployed at 2026-01-13T11:53:00
+// Deployed at 2026-01-13T12:00:00
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react";
 import LandingPage from './LandingPage';
 import InfoPage from './InfoPage';
 import { TermsOfService, PrivacyPolicy, Support } from './Pages';
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/support" element={<Support />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 };
