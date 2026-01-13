@@ -461,39 +461,31 @@ const LandingPage: React.FC = () => {
 
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">Questions You Probably Have</h2>
 
-          <div className="space-y-6">
-            <div>
-              <p className="font-bold text-lg">"Will he know I'm using scripts?"</p>
-              <p><span className="font-bold">No.</span> These read like normal texts.</p>
-              <p>The "science" part is invisible to him. He just experiences you as easier to talk to.</p>
-            </div>
-
-            <div>
-              <p className="font-bold text-lg">"What if he just doesn't care anymore?"</p>
-              <p>If he's still responding to your texts at all, <span className="font-bold">there's something to work with.</span></p>
-              <p>These scripts are specifically designed for men who seem checked out. They create safety first, then connection.</p>
-            </div>
-
-            <div>
-              <p className="font-bold text-lg">"What if he finds out I'm using scripts and gets mad?"</p>
-              <p>These aren't manipulative "tricks." They're translations. You're saying what you actually mean, just in a way his brain can process. Most women report their husbands actually THANKING them for "communicating better" without ever knowing why it suddenly got easier.</p>
-            </div>
-
-            <div>
-              <p className="font-bold text-lg">"Isn't this just manipulation?"</p>
-              <p>No. Manipulation is getting someone to do what YOU want by being dishonest.</p>
-              <p>These scripts help you express what you ACTUALLY mean in a way his brain can ACTUALLY process.</p>
-            </div>
-
-            <div>
-              <p className="font-bold text-lg">"What if I've already tried everything?"</p>
-              <p>Good news: these scripts work especially well for recovering from past fights.</p>
-            </div>
-
-            <div>
-              <p className="font-bold text-lg">"Do I have to keep doing this forever or will he just go back to how he was?"</p>
-              <p>Most women report needing the scripts less after 30-60 days because the dynamic shifts. Once he experiences you as "safe to open up to," his brain relaxes around you naturally. You're essentially retraining how he responds to you.</p>
-            </div>
+          <div className="space-y-4">
+            <FAQItem
+              question="Will he know I'm using scripts?"
+              answer="No. These read like normal texts. The 'science' part is invisible to him. He just experiences you as easier to talk to."
+            />
+            <FAQItem
+              question="What if he just doesn't care anymore?"
+              answer="If he's still responding to your texts at all, there's something to work with. These scripts are specifically designed for men who seem checked out. They create safety first, then connection."
+            />
+            <FAQItem
+              question="What if he finds out I'm using scripts and gets mad?"
+              answer="These aren't manipulative 'tricks.' They're translations. You're saying what you actually mean, just in a way his brain can process. Most women report their husbands actually THANKING them for 'communicating better' without ever knowing why it suddenly got easier."
+            />
+            <FAQItem
+              question="Isn't this just manipulation?"
+              answer="No. Manipulation is getting someone to do what YOU want by being dishonest. These scripts help you express what you ACTUALLY mean in a way his brain can ACTUALLY process."
+            />
+            <FAQItem
+              question="What if I've already tried everything?"
+              answer="Good news: these scripts work especially well for recovering from past fights. They bypass the usual defensive triggers that past arguments have created."
+            />
+            <FAQItem
+              question="Do I have to keep doing this forever?"
+              answer="Most women report needing the scripts less after 30-60 days because the dynamic shifts. Once he experiences you as 'safe to open up to,' his brain relaxes around you naturally. You're essentially retraining how he responds to you."
+            />
           </div>
 
           <hr className="my-12 border-gray-200" />
@@ -600,7 +592,35 @@ const LandingPage: React.FC = () => {
             <a href="/support" className="hover:text-gray-900 underline">Support</a>
           </div>
         </div>
+
+        {/* Mobile Sticky CTA */}
+        <div className="md:hidden fixed bottom-4 left-4 right-4 z-50">
+          <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white w-full py-4 rounded-xl font-bold shadow-2xl flex justify-between items-center px-6" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+            <span>Get All 87 Scripts</span>
+            <span>$19 <ArrowRight className="w-5 h-5 inline ml-1" /></span>
+          </a>
+        </div>
       </main>
+    </div>
+  );
+};
+
+const FAQItem = ({ question, answer }: { question: string, answer: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="border border-gray-200 rounded-lg overflow-hidden bg-white">
+      <button
+        className="w-full text-left p-4 font-bold flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {question}
+        <span>{isOpen ? '−' : '+'}</span>
+      </button>
+      {isOpen && (
+        <div className="p-4 bg-white border-t border-gray-100 text-gray-700">
+          {answer}
+        </div>
+      )}
     </div>
   );
 };
