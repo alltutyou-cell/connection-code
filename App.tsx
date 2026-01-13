@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+// Deployed at 2026-01-13T11:53:00
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import LandingPage from './LandingPage';
 import InfoPage from './InfoPage';
