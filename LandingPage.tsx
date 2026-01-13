@@ -57,6 +57,13 @@ const LandingPage: React.FC = () => {
           <p className="text-xl md:text-2xl text-gray-600 font-medium mb-8 max-w-2xl mx-auto">
             "When He Finally Hears You (Without Another Exhausting Fight), Everything Changes - Get All 87 Word-for-Word Scripts That Make Him WANT to Reconnect"
           </p>
+
+          <div className="mt-8 mb-4">
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+              GET ALL 87 SCRIPTS - $19 <ArrowRight className="w-5 h-5" />
+            </a>
+            <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
+          </div>
         </div>
 
         {/* Intro Body */}
