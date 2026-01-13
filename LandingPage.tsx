@@ -64,6 +64,10 @@ const LandingPage: React.FC = () => {
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
+
+          <div className="mt-8 mb-4 transform scale-90 md:scale-100">
+            <BookMockup />
+          </div>
         </div>
 
         {/* Intro Body */}
