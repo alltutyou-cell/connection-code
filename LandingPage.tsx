@@ -445,7 +445,7 @@ const LandingPage: React.FC = () => {
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold serif mb-6 mt-16 text-center">See For Yourself: Actual Pages From The Guide</h2>
+          <h2 className="text-2xl md:text-3xl font-bold serif mb-6 mt-16 text-center">See For Yourself: Actual Pages From The Book</h2>
           <p className="text-center mb-8 text-gray-600">This isn't vague advice. These are copy-paste scripts.</p>
 
           <div className="relative my-8 py-12 bg-[#F2F0E9] rounded-3xl overflow-hidden shadow-inner">
@@ -470,7 +470,7 @@ const LandingPage: React.FC = () => {
 
             <div className="relative text-center mt-12">
               <p className="inline-block bg-white/80 backdrop-blur-sm px-4 py-1 rounded-full text-xs font-bold text-gray-500 uppercase tracking-widest border border-gray-200 shadow-sm">
-                Preview of actual PDF pages
+                Preview of actual book pages
               </p>
             </div>
           </div>
