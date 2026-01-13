@@ -448,22 +448,30 @@ const LandingPage: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6 mt-16 text-center">See For Yourself: Actual Pages From The Guide</h2>
           <p className="text-center mb-8 text-gray-600">This isn't vague advice. These are copy-paste scripts.</p>
 
-          <div className="space-y-8 mb-16">
-            <div className="border border-gray-200 rounded-xl shadow-lg overflow-hidden">
-              <div className="bg-gray-50 p-3 text-sm font-bold uppercase text-gray-500 text-center tracking-widest">Chapter 4: Appreciation Scripts</div>
-              <img src="/chapter-4-intro.png" alt="Chapter 4 Title Page" className="w-full h-auto" />
-              <img src="/appreciation-scripts.png" alt="Appreciation Scripts Example" className="w-full h-auto border-t border-gray-100" />
+          <div className="relative my-8 py-12 bg-[#F2F0E9] rounded-3xl overflow-hidden shadow-inner">
+            <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+
+            <div className="relative flex flex-col md:flex-row justify-center items-center -space-y-12 md:space-y-0 md:-space-x-20 px-4 pt-4">
+              {/* Page 1 (Rotated Left) */}
+              <div className="bg-white shadow-2xl transform rotate-[-6deg] md:rotate-[-12deg] z-10 w-full max-w-[220px] md:max-w-[260px] aspect-[8.5/11] border border-gray-200 overflow-hidden">
+                <img src="/appreciation-scripts.png" alt="Appreciation Scripts" className="w-full h-full object-cover" />
+              </div>
+
+              {/* Page 2 (Center - Featured) */}
+              <div className="bg-white shadow-2xl z-20 w-full max-w-[240px] md:max-w-[300px] aspect-[8.5/11] border border-gray-200 transform scale-110 overflow-hidden">
+                <img src="/conflict-scripts.png" alt="Conflict Scripts" className="w-full h-full object-cover" />
+              </div>
+
+              {/* Page 3 (Rotated Right) */}
+              <div className="bg-white shadow-2xl transform rotate-[6deg] md:rotate-[12deg] z-10 w-full max-w-[220px] md:max-w-[260px] aspect-[8.5/11] border border-gray-200 overflow-hidden">
+                <img src="/intimacy-scripts.png" alt="Intimacy Scripts" className="w-full h-full object-cover" />
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="border border-gray-200 rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-gray-50 p-3 text-sm font-bold uppercase text-gray-500 text-center tracking-widest">Chapter 8: Intimacy</div>
-                <img src="/intimacy-scripts.png" alt="Intimacy Scripts Example" className="w-full h-auto" />
-              </div>
-              <div className="border border-gray-200 rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-gray-50 p-3 text-sm font-bold uppercase text-gray-500 text-center tracking-widest">Chapter 7: Conflict</div>
-                <img src="/conflict-scripts.png" alt="Conflict Resolution Scripts Example" className="w-full h-auto" />
-              </div>
+            <div className="relative text-center mt-12">
+              <p className="inline-block bg-white/80 backdrop-blur-sm px-4 py-1 rounded-full text-xs font-bold text-gray-500 uppercase tracking-widest border border-gray-200 shadow-sm">
+                Preview of actual PDF pages
+              </p>
             </div>
           </div>
 
