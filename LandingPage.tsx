@@ -60,16 +60,21 @@ const LandingPage: React.FC = () => {
         <div className="prose prose-lg mx-auto text-gray-800 leading-relaxed">
           <p>Look, I'm not going to promise this will make your husband "fall in love with you again" or whatever.</p>
           <p>That's not how this works.</p>
-          <p>What these scripts actually do is translate what you're trying to say into words his brain can actually process without triggering his whole defensive shutdown thing.</p>
-          <p>Same meaning. Different structure. He finally hears you.</p>
+          <p>What these scripts actually do is <span className="font-bold bg-yellow-100/50 px-1">translate what you're trying to say</span> into words his brain can actually process <span className="font-bold">without triggering his whole defensive shutdown thing.</span></p>
+          <p className="font-medium text-xl">Same meaning. Different structure. <span className="text-[#E67E7E] font-bold">He finally hears you.</span></p>
 
-          <p className="font-bold text-lg my-6">
-            And yeah, it works even if therapy failed. Even if he "doesn't do feelings." Even if you've been having the same fight for three years.
-          </p>
+          <div className="bg-rose-50 p-6 rounded-lg border-l-4 border-[#E67E7E] my-8 shadow-sm">
+            <p className="font-bold text-[#E67E7E] text-lg mb-2">And yeah, it works even if:</p>
+            <ul className="list-disc pl-5 space-y-1 font-medium text-gray-700">
+              <li>Therapy has failed</li>
+              <li>He "doesn't do feelings"</li>
+              <li>You've been having the same fight for three years</li>
+            </ul>
+          </div>
 
           <div className="bg-gray-50 p-4 rounded-lg my-6 border-l-4 border-gray-300">
             <p className="italic text-gray-600 text-sm">
-              "Sarah sent one text using Script #34. Her husband opened up about work stress he'd been carrying for months. They talked for two hours."
+              "Sarah sent one text using Script #34. <span className="font-bold text-gray-800">Her husband opened up about work stress he'd been carrying for months.</span> They talked for two hours."
             </p>
           </div>
 
@@ -91,22 +96,22 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
-          <p>Sarah sent one text.</p>
+          <p><span className="font-bold">Sarah sent one text.</span></p>
           <p>Script #34 from the vulnerability chapter.</p>
           <p>Her husband had been distant for months. One-word answers. Came home, ate dinner in silence, went to his office.</p>
           <p>She'd tried everything. Date nights where they sat across from each other with nothing to say. Therapy sessions he hated. Those "I feel" statements that just made him more defensive.</p>
-          <p>Then she used the script.</p>
-          <p>Within 20 minutes he was telling her about work stress he'd been carrying since March. Stuff he'd never mentioned. He cried. Actually cried.</p>
+          <p><span className="font-bold text-lg">Then she used the script.</span></p>
+          <p>Within 20 minutes he was telling her about work stress he'd been carrying since March. Stuff he'd never mentioned. <span className="font-bold bg-yellow-100/50 px-1">He cried. Actually cried.</span></p>
           <p>They talked for two hours.</p>
-          <p>Next day he texted her: "I feel like we're on the same team again."</p>
+          <p>Next day he texted her: <span className="italic font-medium">"I feel like we're on the same team again."</span></p>
 
           <hr className="my-12 border-gray-200" />
 
           <p>Here's the thing about that text Sarah sent.</p>
           <p>It wasn't magic. It wasn't manipulation.</p>
-          <p>She said the exact same thing she'd been trying to say for months.</p>
+          <p>She said the <span className="font-bold">exact same thing</span> she'd been trying to say for months.</p>
           <p>She just structured it differently.</p>
-          <p>And his brain stayed calm enough to actually hear her.</p>
+          <p><span className="font-bold text-[#E67E7E]">And his brain stayed calm enough to actually hear her.</span></p>
 
           <hr className="my-12 border-gray-200" />
 
@@ -119,19 +124,19 @@ const LandingPage: React.FC = () => {
           <p>Or he got defensive. Or he walked away. Or he gave you that blank stare like you were speaking a language he doesn't understand.</p>
           <p>Because (and I'm sorry no one told you this earlier) he kind of... isn't understanding you.</p>
           <p>Not because he's dumb. Not because he doesn't care.</p>
-          <p>Because men's brains process emotional information completely differently than women's brains do.</p>
+          <p>Because <span className="font-bold bg-yellow-100/50 px-1">men's brains process emotional information completely differently</span> than women's brains do.</p>
           <p>Dr. John Gottman spent 40 years studying thousands of couples. He can predict divorce with 94% accuracy just by listening to how couples talk to each other for 15 minutes.</p>
           <p>And one of the biggest things he found?</p>
-          <p>When women express feelings the way that feels natural to us, men's brains interpret it as a threat.</p>
+          <p>When women express feelings the way that feels natural to us, <span className="font-bold">men's brains interpret it as a threat.</span></p>
           <p>Their amygdala (the fight-or-flight part) activates. Stress hormones flood their system. The part of their brain that processes empathy literally goes offline.</p>
           <p>They can't access the part that helps them understand you.</p>
-          <p>So they do what any threatened animal does. Freeze. Fight. Flee.</p>
+          <p>So they do what any threatened animal does. <span className="font-bold">Freeze. Fight. Flee.</span></p>
           <p>That's why he goes silent. Gets defensive. Leaves the room.</p>
           <p>His body thinks he's being attacked.</p>
 
           <hr className="my-12 border-gray-200" />
 
-          <p>But when you restructure the same message using specific patterns that keep his nervous system calm?</p>
+          <p>But when you <span className="font-bold">restructure the same message</span> using specific patterns that keep his nervous system calm?</p>
           <p>He can actually hear you.</p>
           <p>Wild, right?</p>
 
@@ -295,7 +300,7 @@ const LandingPage: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">So What's Actually In This Thing?</h2>
 
           <p>87 scripts. Organized by the situation you're in.</p>
-          <p>Daily connection stuff. How to start difficult conversations. Intimacy recovery when that's been dead for months. Conflict resolution that doesn't turn into World War 3. Getting him to open up about what's actually wrong. Setting boundaries without sounding like his mom. Emergency scripts for when things are falling apart right now.</p>
+          <p>Daily connection stuff. How to start difficult conversations. Intimacy recovery <span className="font-bold">when that's been dead for months.</span> Conflict resolution that doesn't turn into World War 3. Getting him to open up about what's actually wrong. Setting boundaries without sounding like his mom. Emergency scripts for when things are falling apart right now.</p>
           <p>I'm going to walk through each section so you know what you're getting.</p>
 
           <hr className="my-8 border-gray-200" />
@@ -316,7 +321,7 @@ const LandingPage: React.FC = () => {
               </div>
 
               <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
-                "I have my best friend back. We went from 3 meaningless texts a week to 15+ daily conversations." — Jennifer M.
+                "I have my best friend back. You guys, we went from 3 meaningless texts a week to <span className="font-bold">15+ daily conversations.</span>" — Jennifer M.
               </p>
             </div>
 
@@ -332,7 +337,7 @@ const LandingPage: React.FC = () => {
                 <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: "Get your thoughts" activates his problem-solver brain. "No pressure" is a safety signal.</p>
+              <p>Why this works: "Get your thoughts" activates his <span className="font-bold">problem-solver brain</span>. "No pressure" is a safety signal.</p>
             </div>
 
             <div>
@@ -348,7 +353,7 @@ const LandingPage: React.FC = () => {
               </div>
 
               <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
-                "We've had sex 4 times this week. FOUR TIMES. We haven't done that since our honeymoon." — Amanda K., 41
+                "We've had sex 4 times this week. <span className="font-bold">FOUR TIMES.</span> We haven't done that since our honeymoon." — Amanda K., 41
               </p>
             </div>
 
@@ -365,7 +370,7 @@ const LandingPage: React.FC = () => {
               </div>
 
               <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
-                "We solved a 3-year-running argument in ONE 15-minute conversation. I'm furious a $19 book did what $8,000 of therapy couldn't." — Lisa R.
+                "We solved a 3-year-running argument in <span className="font-bold">ONE 15-minute conversation.</span> I'm furious a $19 book did what $8,000 of therapy couldn't." — Lisa R.
               </p>
             </div>
 
@@ -382,7 +387,7 @@ const LandingPage: React.FC = () => {
               </div>
 
               <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
-                "Within 20 minutes he opened up about work stress he'd been carrying for months. He actually cried." — Sarah T.
+                "Within 20 minutes he opened up about work stress he'd been carrying for months. <span className="font-bold">He actually cried.</span>" — Sarah T.
               </p>
             </div>
 
@@ -413,7 +418,7 @@ const LandingPage: React.FC = () => {
                 <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
               <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
-                "He stopped mid-sentence. Got quiet. Then said: 'I don't want to fight either. I'm sorry.' Those are the words I've been waiting 6 YEARS to hear." — Rebecca S.
+                "He stopped mid-sentence. Got quiet. Then said: 'I don't want to fight either. I'm sorry.' Those are the words I've been waiting <span className="font-bold">6 YEARS to hear.</span>" — Rebecca S.
               </p>
             </div>
           </div>
@@ -430,18 +435,18 @@ const LandingPage: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">Here's What Makes This Different From Everything Else You've Tried</h2>
 
           <p>Marriage counseling told you to "communicate better."</p>
-          <p>You did. He still shut down.</p>
+          <p className="font-bold pl-4 border-l-2 border-red-500 mb-4">You did. He still shut down.</p>
           <p>Therapy told you to use "I feel" statements.</p>
-          <p>You tried. He got defensive.</p>
+          <p className="font-bold pl-4 border-l-2 border-red-500 mb-4">You tried. He got defensive.</p>
           <p>Self-help books told you to "schedule quality time."</p>
-          <p>You sat across from each other at expensive restaurants in awkward silence.</p>
+          <p className="font-bold pl-4 border-l-2 border-red-500 mb-4">You sat across from each other at expensive restaurants in awkward silence.</p>
           <p>Your friends told you "men just don't communicate like we do, accept it."</p>
-          <p>But you've SEEN other couples actually enjoy talking to each other. So you know it's possible.</p>
+          <p className="mt-4">But you've <span className="font-bold text-[#E67E7E]">SEEN other couples actually enjoy talking to each other.</span> So you know it's possible.</p>
 
           <hr className="my-8 border-gray-200" />
 
           <h3 className="font-bold text-lg mt-6 mb-2">They're based on actual neuroscience</h3>
-          <p>Dr. Gottman studied 3,000+ couples over 40 years. He identified the exact language patterns that keep marriages strong vs those that predict divorce.</p>
+          <p>Dr. Gottman studied 3,000+ couples over 40 years. He identified the <span className="font-bold bg-yellow-100/50 px-1">exact language patterns</span> that keep marriages strong vs those that predict divorce.</p>
           <p>These scripts use the patterns that work.</p>
 
           <h3 className="font-bold text-lg mt-6 mb-2">They speak to how his brain actually processes information</h3>
@@ -449,7 +454,7 @@ const LandingPage: React.FC = () => {
 
           <h3 className="font-bold text-lg mt-6 mb-2">They're plug-and-play</h3>
           <p>You don't need to understand attachment theory. Process your childhood trauma. Get him to read a book. Convince him therapy is important. Wait until he's "ready to work on things."</p>
-          <p>You just copy the script. Send it. Watch what happens.</p>
+          <p><span className="font-bold">You just copy the script. Send it. Watch what happens.</span></p>
 
 
           <hr className="my-12 border-gray-200" />
@@ -459,19 +464,19 @@ const LandingPage: React.FC = () => {
           <div className="space-y-6">
             <div>
               <p className="font-bold text-lg">"Will he know I'm using scripts?"</p>
-              <p>No. These read like normal texts.</p>
+              <p><span className="font-bold">No.</span> These read like normal texts.</p>
               <p>The "science" part is invisible to him. He just experiences you as easier to talk to.</p>
             </div>
 
             <div>
               <p className="font-bold text-lg">"What if he just doesn't care anymore?"</p>
-              <p>If he's still responding to your texts at all, there's something to work with.</p>
+              <p>If he's still responding to your texts at all, <span className="font-bold">there's something to work with.</span></p>
               <p>These scripts are specifically designed for men who seem checked out. They create safety first, then connection.</p>
             </div>
 
             <div>
               <p className="font-bold text-lg">"What if he finds out I'm using scripts and gets mad?"</p>
-              <p>These aren't manipulative "tricks." They're translations. You're saying what you actually mean, just in a way his brain can process. It's like speaking Spanish to someone who speaks Spanish instead of shouting English louder. Most women report their husbands actually THANKING them for "communicating better" without ever knowing why it suddenly got easier.</p>
+              <p>These aren't manipulative "tricks." They're translations. You're saying what you actually mean, just in a way his brain can process. Most women report their husbands actually THANKING them for "communicating better" without ever knowing why it suddenly got easier.</p>
             </div>
 
             <div>
@@ -487,7 +492,7 @@ const LandingPage: React.FC = () => {
 
             <div>
               <p className="font-bold text-lg">"Do I have to keep doing this forever or will he just go back to how he was?"</p>
-              <p>Most women report needing the scripts less after 30-60 days because the dynamic shifts. Once he experiences you as "safe to open up to," his brain relaxes around you naturally. You're essentially retraining how he responds to you. That said, you'll probably keep using them because they work so well.</p>
+              <p>Most women report needing the scripts less after 30-60 days because the dynamic shifts. Once he experiences you as "safe to open up to," his brain relaxes around you naturally. You're essentially retraining how he responds to you.</p>
             </div>
           </div>
 
@@ -496,13 +501,13 @@ const LandingPage: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">What Actually Happens After You Get This</h2>
 
           <div className="space-y-4">
-            <p><span className="font-bold">Minute 1:</span> You download the PDF (sent instantly to your email)</p>
-            <p><span className="font-bold">Minute 5:</span> You're scanning through looking for scripts that match your situation</p>
-            <p><span className="font-bold">Minute 15:</span> You copy-paste your first script and send it (probably feeling skeptical)</p>
-            <p><span className="font-bold">Hour 1:</span> He responds differently than usual (maybe just a little, but you notice)</p>
-            <p><span className="font-bold">Day 3:</span> You've used a few scripts and conversations feel easier somehow</p>
-            <p><span className="font-bold">Week 2:</span> He's initiating conversations. Texting you first. Asking about your day and actually listening.</p>
-            <p><span className="font-bold">Month 1:</span> You haven't had a fight in weeks.</p>
+            <p><span className="font-bold text-[#E67E7E]">Minute 1:</span> You download the PDF (sent instantly to your email)</p>
+            <p><span className="font-bold text-[#E67E7E]">Minute 5:</span> You're scanning through looking for scripts that match your situation</p>
+            <p><span className="font-bold text-[#E67E7E]">Minute 15:</span> You copy-paste your first script and send it (probably feeling skeptical)</p>
+            <p><span className="font-bold text-[#E67E7E]">Hour 1:</span> He responds differently than usual (maybe just a little, but you notice)</p>
+            <p><span className="font-bold text-[#E67E7E]">Day 3:</span> You've used a few scripts and conversations feel easier somehow</p>
+            <p><span className="font-bold text-[#E67E7E]">Week 2:</span> He's initiating conversations. Texting you first. Asking about your day and actually listening.</p>
+            <p><span className="font-bold text-[#E67E7E]">Month 1:</span> You haven't had a fight in weeks.</p>
           </div>
 
           <hr className="my-12 border-gray-200" />
