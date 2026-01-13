@@ -78,8 +78,10 @@ const LandingPage: React.FC = () => {
           {/* Story Section */}
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">This Is What Happens When You Stop Trying To Get Him To "Communicate Better"</h2>
 
-          <div className="my-10 rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
-            <img src="/winning-ad-screenshot.jpg" alt="Text message screenshot showing husband connecting with friend" className="w-full h-auto" />
+          <div className="my-10 flex justify-center">
+            <div className="max-w-[320px] w-full shadow-2xl rounded-[3rem] overflow-hidden border-8 border-gray-900 bg-black">
+              <img src="/phone-conversation-only.png" alt="Text message screenshot on iPhone" className="w-full h-auto block" />
+            </div>
           </div>
 
           <p>Sarah sent one text.</p>
