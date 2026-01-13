@@ -314,6 +314,10 @@ const LandingPage: React.FC = () => {
           <p>Daily connection stuff. How to start difficult conversations. Intimacy recovery <span className="font-bold">when that's been dead for months.</span> Conflict resolution that doesn't turn into World War 3. Getting him to open up about what's actually wrong. Setting boundaries without sounding like his mom. Emergency scripts for when things are falling apart right now.</p>
           <p>I'm going to walk through each section so you know what you're getting.</p>
 
+          <div className="my-8 border-4 border-gray-100 rounded-xl overflow-hidden shadow-lg">
+            <img src="/table-of-contents.png" alt="Table of Contents The Connection Code" className="w-full h-auto" />
+          </div>
+
           <hr className="my-8 border-gray-200" />
 
           <div className="space-y-12">
@@ -439,6 +443,28 @@ const LandingPage: React.FC = () => {
               GET ALL 87 SCRIPTS - $19 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold serif mb-6 mt-16 text-center">See For Yourself: Actual Pages From The Guide</h2>
+          <p className="text-center mb-8 text-gray-600">This isn't vague advice. These are copy-paste scripts.</p>
+
+          <div className="space-y-8 mb-16">
+            <div className="border border-gray-200 rounded-xl shadow-lg overflow-hidden">
+              <div className="bg-gray-50 p-3 text-sm font-bold uppercase text-gray-500 text-center tracking-widest">Chapter 4: Appreciation Scripts</div>
+              <img src="/chapter-4-intro.png" alt="Chapter 4 Title Page" className="w-full h-auto" />
+              <img src="/appreciation-scripts.png" alt="Appreciation Scripts Example" className="w-full h-auto border-t border-gray-100" />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="border border-gray-200 rounded-xl shadow-lg overflow-hidden">
+                <div className="bg-gray-50 p-3 text-sm font-bold uppercase text-gray-500 text-center tracking-widest">Chapter 8: Intimacy</div>
+                <img src="/intimacy-scripts.png" alt="Intimacy Scripts Example" className="w-full h-auto" />
+              </div>
+              <div className="border border-gray-200 rounded-xl shadow-lg overflow-hidden">
+                <div className="bg-gray-50 p-3 text-sm font-bold uppercase text-gray-500 text-center tracking-widest">Chapter 7: Conflict</div>
+                <img src="/conflict-scripts.png" alt="Conflict Resolution Scripts Example" className="w-full h-auto" />
+              </div>
+            </div>
           </div>
 
           <hr className="my-12 border-gray-200" />
