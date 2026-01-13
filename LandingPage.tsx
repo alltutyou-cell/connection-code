@@ -51,9 +51,12 @@ const LandingPage: React.FC = () => {
           </div>
           <p className="font-bold text-sm tracking-widest uppercase text-gray-500 mb-6 text-lg">TRUSTED BY 500+ WIVES</p>
 
-          <h1 className="text-3xl md:text-5xl font-bold serif leading-tight mb-8">
+          <h1 className="text-3xl md:text-5xl font-bold serif leading-tight mb-6">
             The 87 Scripts That Made Him Feel Like "We're On The Same Team Again"
           </h1>
+          <p className="text-xl md:text-2xl text-gray-600 font-medium mb-8 max-w-2xl mx-auto">
+            "When He Finally Hears You (Without Another Exhausting Fight), Everything Changes - Get All 87 Word-for-Word Scripts That Make Him WANT to Reconnect"
+          </p>
         </div>
 
         {/* Intro Body */}
