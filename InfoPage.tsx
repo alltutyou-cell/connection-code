@@ -68,7 +68,7 @@ const AccordionItem: React.FC<{ question: string; answer: React.ReactNode }> = (
   );
 };
 
-const LandingPage: React.FC = () => {
+const InfoPage: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [showStickyBar, setShowStickyBar] = useState(false);
 
