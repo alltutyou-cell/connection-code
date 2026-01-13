@@ -60,7 +60,7 @@ const LandingPage: React.FC = () => {
 
           <div className="mt-8 mb-4">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              GET ALL 87 SCRIPTS - $19 <ArrowRight className="w-5 h-5" />
+              Yes, Send Me All 87 Scripts - $19 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -94,7 +94,7 @@ const LandingPage: React.FC = () => {
 
           <div className="my-8 text-center">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              GET ALL 87 SCRIPTS - $19 <ArrowRight className="w-5 h-5" />
+              I Want Him to Finally Hear Me - $19 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -310,6 +310,13 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
+          <div className="mt-8 mb-4 text-center">
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+              I Want This for My Marriage Too - $19 <ArrowRight className="w-5 h-5" />
+            </a>
+            <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
+          </div>
+
           <hr className="my-12 border-gray-200" />
 
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">So What's Actually In This Thing?</h2>
@@ -444,7 +451,7 @@ const LandingPage: React.FC = () => {
 
           <div className="my-12 text-center">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              GET ALL 87 SCRIPTS - $19 <ArrowRight className="w-5 h-5" />
+              Get Instant Access to All 87 Scripts - $19 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -477,6 +484,13 @@ const LandingPage: React.FC = () => {
                 Preview of actual book pages
               </p>
             </div>
+          </div>
+
+          <div className="mt-8 mb-4 text-center">
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+              I Want All 87 Scripts Like These - $19 <ArrowRight className="w-5 h-5" />
+            </a>
+            <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
 
           <hr className="my-12 border-gray-200" />
@@ -537,6 +551,13 @@ const LandingPage: React.FC = () => {
             />
           </div>
 
+          <div className="mt-8 mb-4 text-center">
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+              My Questions Are Answered - Send The Scripts - $19 <ArrowRight className="w-5 h-5" />
+            </a>
+            <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
+          </div>
+
           <hr className="my-12 border-gray-200" />
 
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">What Actually Happens After You Get This</h2>
@@ -567,6 +588,13 @@ const LandingPage: React.FC = () => {
             <p>Because these scripts work. And we know once you see your husband actually HEAR you for the first time in months (maybe years), you're not going to ask for a refund.</p>
           </div>
 
+          <div className="mt-8 mb-4 text-center">
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+              Try All 87 Scripts Risk-Free - $19 <ArrowRight className="w-5 h-5" />
+            </a>
+            <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
+          </div>
+
           <hr className="my-12 border-gray-200" />
 
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6 text-center">Get All 87 Scripts For $19</h2>
@@ -593,7 +621,7 @@ const LandingPage: React.FC = () => {
             </div>
 
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg w-full px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex justify-center items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              GET ALL 87 SCRIPTS NOW - $19 <ArrowRight className="w-5 h-5" />
+              Get Instant Access to All 87 Scripts - $19 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-4 text-center">60-Day Money-Back Guarantee</p>
           </div>
@@ -618,7 +646,7 @@ const LandingPage: React.FC = () => {
 
           <div className="text-center mb-12">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              GET ALL 87 SCRIPTS NOW - $19 <ArrowRight className="w-5 h-5" />
+              Yes, I Want to Save My Marriage - Get The Scripts - $19 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -644,9 +672,8 @@ const LandingPage: React.FC = () => {
 
         {/* Mobile Sticky CTA */}
         <div className="md:hidden fixed bottom-4 left-4 right-4 z-50">
-          <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white w-full py-4 rounded-xl font-bold shadow-2xl flex justify-between items-center px-6" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-            <span>Get All 87 Scripts</span>
-            <span>$19 <ArrowRight className="w-5 h-5 inline ml-1" /></span>
+          <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white w-full py-4 rounded-xl font-bold shadow-2xl flex justify-center items-center gap-2 px-6" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+            Get All 87 Scripts - $19 <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </main>
