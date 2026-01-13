@@ -55,7 +55,7 @@ const LandingPage: React.FC = () => {
             The 87 Scripts That Made Him Feel Like "We're On The Same Team Again"
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 font-medium mb-8 max-w-2xl mx-auto">
-            "When He Finally Hears You (Without Another Exhausting Fight), Everything Changes - Get All 87 Word-for-Word Scripts That Make Him WANT to Reconnect"
+            When He Finally Hears You (Without Another Exhausting Fight), Everything Changes - Get All 87 Word-for-Word Scripts That Make Him WANT to Reconnect
           </p>
 
           <div className="mt-8 mb-4">
