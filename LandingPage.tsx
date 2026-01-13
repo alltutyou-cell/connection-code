@@ -44,12 +44,12 @@ const LandingPage: React.FC = () => {
 
         {/* Header Section */}
         <div className="text-center mb-12">
-          <div className="flex justify-center items-center gap-1 mb-4">
+          <div className="flex justify-center items-center gap-1 mb-4 scale-110">
             {[1, 2, 3, 4, 5].map((i) => (
               <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />
             ))}
           </div>
-          <p className="font-bold text-sm tracking-widest uppercase text-gray-500 mb-6">TRUSTED BY 500+ WIVES</p>
+          <p className="font-bold text-sm tracking-widest uppercase text-gray-500 mb-6 text-lg">TRUSTED BY 500+ WIVES</p>
 
           <h1 className="text-3xl md:text-5xl font-bold serif leading-tight mb-8">
             The 87 Scripts That Made Him Feel Like "We're On The Same Team Again"
@@ -63,9 +63,13 @@ const LandingPage: React.FC = () => {
           <p>What these scripts actually do is translate what you're trying to say into words his brain can actually process without triggering his whole defensive shutdown thing.</p>
           <p>Same meaning. Different structure. He finally hears you.</p>
 
-          <div className="bg-rose-50 p-6 rounded-lg border-l-4 border-[#E67E7E] my-8 shadow-sm">
-            <p className="font-bold text-[#E67E7E] m-0">
-              And yeah, it works even if therapy failed. Even if he "doesn't do feelings." Even if you've been having the same fight for three years.
+          <p className="font-bold text-lg my-6">
+            And yeah, it works even if therapy failed. Even if he "doesn't do feelings." Even if you've been having the same fight for three years.
+          </p>
+
+          <div className="bg-gray-50 p-4 rounded-lg my-6 border-l-4 border-gray-300">
+            <p className="italic text-gray-600 text-sm">
+              "Sarah sent one text using Script #34. Her husband opened up about work stress he'd been carrying for months. They talked for two hours."
             </p>
           </div>
 
@@ -154,14 +158,17 @@ const LandingPage: React.FC = () => {
               <p className="font-bold text-green-700 mb-2">Same need, different structure:</p>
 
               {/* Chat Bubble Visual */}
-              <div className="flex flex-col gap-1 my-4">
-                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[95%] shadow-sm text-sm">
-                  <p>"I want to share something with you and get your thoughts. I know you're working hard for us. I miss our connection time together. Would you be willing to spend 20 min tonight just talking?"</p>
+              <div className="my-6">
+                <p className="text-xs text-gray-500 mb-2 italic">Sarah used Script #34 when she felt disconnected:</p>
+                <div className="flex flex-col gap-1">
+                  <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[95%] shadow-sm text-sm">
+                    <p>"I want to share something with you and get your thoughts. I know you're working hard for us. I miss our connection time together. Would you be willing to spend 20 min tonight just talking?"</p>
+                  </div>
+                  <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[95%] shadow-sm text-sm">
+                    <p>"No pressure - let me know what you think."</p>
+                  </div>
+                  <p className="text-[10px] text-gray-400 text-right pr-2">Read 4:12 PM</p>
                 </div>
-                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[95%] shadow-sm text-sm">
-                  <p>"No pressure - let me know what you think."</p>
-                </div>
-                <p className="text-[10px] text-gray-400 text-right pr-2">Read 4:12 PM</p>
               </div>
 
               <div className="border-t border-green-200 pt-4 mt-2">
@@ -300,6 +307,7 @@ const LandingPage: React.FC = () => {
               <p>These scripts actually work because they give him something specific to respond to. And they make him feel appreciated instead of interrogated.</p>
 
               <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <p className="text-xs text-gray-500 italic mb-1">Jennifer M. sent this when she felt like she was invisible to him:</p>
                 <p className="text-xs text-gray-400 text-center mb-1">Today 2:30 PM</p>
                 <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
                   <p>Script #4: "I was thinking about how you [specific action] earlier. That really meant a lot to me. Thank you."</p>
@@ -307,7 +315,9 @@ const LandingPage: React.FC = () => {
                 <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: It's specific, it's about something that already happened (so you're not asking for anything), and it's just acknowledgment.</p>
+              <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
+                "I have my best friend back. We went from 3 meaningless texts a week to 15+ daily conversations." — Jennifer M.
+              </p>
             </div>
 
             <div>
@@ -315,6 +325,7 @@ const LandingPage: React.FC = () => {
               <p className="italic text-gray-600 mb-4">How to bring up something important without triggering his "oh god what did I do now" panic.</p>
 
               <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <p className="text-xs text-gray-500 italic mb-1">When you need to talk but he usually shuts down:</p>
                 <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
                   <p>Script #18: "I want to share something with you and get your thoughts. No pressure, just curious what you think about this."</p>
                 </div>
@@ -329,13 +340,16 @@ const LandingPage: React.FC = () => {
               <p className="italic text-gray-600 mb-4">For when the physical connection has been... yeah.</p>
 
               <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <p className="text-xs text-gray-500 italic mb-1">Amanda sent this after an 8-month dry spell:</p>
                 <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
                   <p>Script #31: "I miss being close to you. Not in a 'you're doing something wrong' way. I genuinely just miss US."</p>
                 </div>
                 <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: "I miss" is about your feeling, not his failure. You're preemptively addressing his biggest fear (that you're mad at him).</p>
+              <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
+                "We've had sex 4 times this week. FOUR TIMES. We haven't done that since our honeymoon." — Amanda K., 41
+              </p>
             </div>
 
             <div>
@@ -343,13 +357,16 @@ const LandingPage: React.FC = () => {
               <p className="italic text-gray-600 mb-4">How to address actual problems without starting World War 3.</p>
 
               <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <p className="text-xs text-gray-500 italic mb-1">Lisa used this to resolve a 3-year argument about his mother:</p>
                 <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
                   <p>Script #47: "I need your help figuring something out. You're really good at [skill]. Can I get 10 minutes of your brain?"</p>
                 </div>
                 <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: "Need your help" activates his hero mode. Acknowledging his competence makes him feel valued instead of attacked.</p>
+              <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
+                "We solved a 3-year-running argument in ONE 15-minute conversation. I'm furious a $19 book did what $8,000 of therapy couldn't." — Lisa R.
+              </p>
             </div>
 
             <div>
@@ -357,13 +374,16 @@ const LandingPage: React.FC = () => {
               <p className="italic text-gray-600 mb-4">Getting him to actually tell you what's wrong instead of saying "I'm fine."</p>
 
               <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <p className="text-xs text-gray-500 italic mb-1">Sarah sent this when he was being distant and grumpy:</p>
                 <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
                   <p>Script #62: "I know you've got a lot on your plate. I'm here if you want to talk about it. And also totally fine if you don't. Just want you to know I'm on your side."</p>
                 </div>
                 <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: You're offering support without demanding he take it. And "on your side" positions you as teammate, not opponent.</p>
+              <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
+                "Within 20 minutes he opened up about work stress he'd been carrying for months. He actually cried." — Sarah T.
+              </p>
             </div>
 
             <div>
@@ -371,6 +391,7 @@ const LandingPage: React.FC = () => {
               <p className="italic text-gray-600 mb-4">How to ask for what you need without starting a fight.</p>
 
               <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <p className="text-xs text-gray-500 italic mb-1">When asking for help usually causes a fight:</p>
                 <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
                   <p>Script #73: "Would you be willing to [specific action]? It would really help me with [specific outcome]."</p>
                 </div>
@@ -385,13 +406,15 @@ const LandingPage: React.FC = () => {
               <p className="italic text-gray-600 mb-4">When things are at breaking point and you need something that works right now.</p>
 
               <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <p className="text-xs text-gray-500 italic mb-1">Rebecca sent this during their "worst fight ever":</p>
                 <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
                   <p>Script #84: "I don't want to fight. I want to understand you. Can we start over?"</p>
                 </div>
                 <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
-
-              <p>Why this works: States what you DO want (not what you don't). "Understand you" makes it about him, not you. "Start over" offers hope.</p>
+              <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
+                "He stopped mid-sentence. Got quiet. Then said: 'I don't want to fight either. I'm sorry.' Those are the words I've been waiting 6 YEARS to hear." — Rebecca S.
+              </p>
             </div>
           </div>
 
@@ -447,6 +470,11 @@ const LandingPage: React.FC = () => {
             </div>
 
             <div>
+              <p className="font-bold text-lg">"What if he finds out I'm using scripts and gets mad?"</p>
+              <p>These aren't manipulative "tricks." They're translations. You're saying what you actually mean, just in a way his brain can process. It's like speaking Spanish to someone who speaks Spanish instead of shouting English louder. Most women report their husbands actually THANKING them for "communicating better" without ever knowing why it suddenly got easier.</p>
+            </div>
+
+            <div>
               <p className="font-bold text-lg">"Isn't this just manipulation?"</p>
               <p>No. Manipulation is getting someone to do what YOU want by being dishonest.</p>
               <p>These scripts help you express what you ACTUALLY mean in a way his brain can ACTUALLY process.</p>
@@ -458,8 +486,8 @@ const LandingPage: React.FC = () => {
             </div>
 
             <div>
-              <p className="font-bold text-lg">"Do I have to use these forever?"</p>
-              <p>No. Once he experiences you as "safe to open up to," his brain starts to relax around you naturally.</p>
+              <p className="font-bold text-lg">"Do I have to keep doing this forever or will he just go back to how he was?"</p>
+              <p>Most women report needing the scripts less after 30-60 days because the dynamic shifts. Once he experiences you as "safe to open up to," his brain relaxes around you naturally. You're essentially retraining how he responds to you. That said, you'll probably keep using them because they work so well.</p>
             </div>
           </div>
 
@@ -479,14 +507,18 @@ const LandingPage: React.FC = () => {
 
           <hr className="my-12 border-gray-200" />
 
+          {/* Enhanced Guarantee Section */}
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 text-center">
             <div className="flex justify-center mb-6">
               <ShieldCheck className="w-16 h-16 text-[#E67E7E]" />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold serif mb-6">Our "It Works Or It's Free" Guarantee</h2>
-            <p>Get the 87 scripts. Try them for 60 days.</p>
-            <p>If you don't see your husband responding differently - if conversations don't get easier - if things don't start to feel better...</p>
-            <p>Email us. We'll refund every penny. No questions asked.</p>
+            <p className="font-bold text-lg mb-4">Get the 87 scripts. Try them for 60 days.</p>
+            <p className="mb-4">If you don't see your husband responding differently — if conversations don't get easier — if things don't start to feel better...</p>
+            <p className="mb-4">Email us. We'll refund every penny. No questions asked.</p>
+            <p className="mb-6">You can even keep the guide.</p>
+            <p className="font-bold mb-2">Why would we do this?</p>
+            <p>Because these scripts work. And we know once you see your husband actually HEAR you for the first time in months (maybe years), you're not going to ask for a refund.</p>
           </div>
 
           <hr className="my-12 border-gray-200" />
@@ -523,18 +555,24 @@ const LandingPage: React.FC = () => {
           <hr className="my-12 border-gray-200" />
 
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">One Last Thing</h2>
-          <p>You've seen other couples actually enjoy talking to each other. You know it's possible.</p>
-          <p>The husbands in those testimonials above seemed just as checked out. Just as defensive. Just as "not capable of emotional connection."</p>
-          <p>Until their wives started speaking a language their brains could actually process.</p>
+          <p>You've been trying to get him to hear you for how long now?</p>
+          <p className="font-bold">Months? Years?</p>
+          <p className="mt-4">You've probably thought "maybe this is just how marriage is supposed to be" or "maybe I'm expecting too much" or "maybe he's just not capable of this kind of connection."</p>
+          <p className="mt-4">The husbands in those testimonials above seemed just as checked out. Just as defensive. Just as "not capable of emotional connection."</p>
+          <p className="mt-4">Until their wives started speaking a language their brains could actually process.</p>
+          <p className="font-bold mt-4">Then everything changed.</p>
+          <p className="mt-4">Not overnight. But fast enough that these women knew something was different within days.</p>
 
           <div className="my-8 bg-rose-50 p-6 rounded-lg text-center">
+            <p className="font-medium text-lg mb-4">You can keep trying the same approach and hoping for different results.</p>
+            <p className="font-medium text-lg mb-4">Or you can try something that's already worked for 500+ other women in your exact situation.</p>
             <p className="font-bold text-xl">$19. 87 scripts. 60-day guarantee.</p>
             <p className="font-bold text-xl mt-2">What do you actually have to lose?</p>
           </div>
 
           <div className="text-center mb-12">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              GET THE SCRIPTS - $19 <ArrowRight className="w-5 h-5" />
+              GET ALL 87 SCRIPTS NOW - $19 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
