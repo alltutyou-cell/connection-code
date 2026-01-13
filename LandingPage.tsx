@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Star, ArrowRight, Menu, X, Check, ShieldCheck } from 'lucide-react';
+import { Star, ArrowRight, Menu, X, Check, ShieldCheck, Heart, MessageCircle } from 'lucide-react';
+import BookMockup from './BookMockup';
 
 const LandingPage: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -62,9 +63,11 @@ const LandingPage: React.FC = () => {
           <p>What these scripts actually do is translate what you're trying to say into words his brain can actually process without triggering his whole defensive shutdown thing.</p>
           <p>Same meaning. Different structure. He finally hears you.</p>
 
-          <p className="font-bold bg-rose-50 p-4 rounded-lg border-l-4 border-[#E67E7E] my-8">
-            And yeah, it works even if therapy failed. Even if he "doesn't do feelings." Even if you've been having the same fight for three years.
-          </p>
+          <div className="bg-rose-50 p-6 rounded-lg border-l-4 border-[#E67E7E] my-8 shadow-sm">
+            <p className="font-bold text-[#E67E7E] m-0">
+              And yeah, it works even if therapy failed. Even if he "doesn't do feelings." Even if you've been having the same fight for three years.
+            </p>
+          </div>
 
           <div className="my-8 text-center">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
@@ -106,7 +109,7 @@ const LandingPage: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">Why Everything You've Tried Hasn't Worked (And Why That's Not Your Fault)</h2>
 
           <p>You know what every marriage therapist, relationship book, and well-meaning friend told you?</p>
-          <p className="font-bold italic">"Just communicate your needs clearly."</p>
+          <p className="font-bold italic text-lg text-center my-6">"Just communicate your needs clearly."</p>
           <p>Cool. You did that.</p>
           <p>He said "okay" and nothing changed.</p>
           <p>Or he got defensive. Or he walked away. Or he gave you that blank stare like you were speaking a language he doesn't understand.</p>
@@ -132,37 +135,49 @@ const LandingPage: React.FC = () => {
 
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">Let Me Show You What I Mean</h2>
 
-          <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm mb-8">
-            <p className="font-bold text-[#E67E7E]">What you naturally want to say:</p>
-            <p className="italic mb-4">"I feel really disconnected from you lately. I miss us. I need you to understand how this affects me."</p>
+          <div className="grid md:grid-cols-2 gap-8 items-center my-12">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm relative">
+              <div className="absolute -top-3 left-6 bg-gray-100 text-gray-600 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded-full">Old Way</div>
+              <p className="font-bold text-[#E67E7E] mb-2">What you naturally want to say:</p>
+              <p className="italic mb-4 text-gray-600">"I feel really disconnected from you lately. I miss us. I need you to understand how this affects me."</p>
 
-            <p className="font-bold text-gray-900">What his brain hears:</p>
-            <p className="italic mb-2">"You're failing as a husband and I'm about to list all the ways."</p>
-            <p className="text-sm text-gray-500 mb-4">(Even though that's not what you said. That's just how his threat-detection system interprets it.)</p>
+              <div className="border-t border-gray-100 pt-4 mt-2">
+                <p className="font-bold text-gray-900 text-sm">What his brain hears:</p>
+                <p className="italic mb-2 text-sm text-gray-600">"You're failing as a husband and I'm about to list all the ways."</p>
+                <p className="font-bold text-gray-900 text-sm mt-3">His response:</p>
+                <p className="text-sm">Shuts down. "I don't know what you want from me." Walks away.</p>
+              </div>
+            </div>
 
-            <p className="font-bold text-gray-900">His response:</p>
-            <p>Shuts down. "I don't know what you want from me." Walks away.</p>
+            <div className="bg-green-50 p-6 rounded-xl border-2 border-green-200 shadow-md relative transform md:-rotate-1">
+              <div className="absolute -top-3 left-6 bg-green-200 text-green-800 px-3 py-1 text-xs font-bold uppercase tracking-wide rounded-full">New Way</div>
+              <p className="font-bold text-green-700 mb-2">Same need, different structure:</p>
+
+              {/* Chat Bubble Visual */}
+              <div className="flex flex-col gap-1 my-4">
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[95%] shadow-sm text-sm">
+                  <p>"I want to share something with you and get your thoughts. I know you're working hard for us. I miss our connection time together. Would you be willing to spend 20 min tonight just talking?"</p>
+                </div>
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[95%] shadow-sm text-sm">
+                  <p>"No pressure - let me know what you think."</p>
+                </div>
+                <p className="text-[10px] text-gray-400 text-right pr-2">Read 4:12 PM</p>
+              </div>
+
+              <div className="border-t border-green-200 pt-4 mt-2">
+                <p className="font-bold text-gray-900 text-sm">His response:</p>
+                <p className="font-medium text-green-900">"Yeah, I'd like that. Give me 10 to finish this and I'm all yours."</p>
+              </div>
+            </div>
           </div>
 
-          <div className="flex justify-center mb-8">
-            <ArrowRight className="text-gray-300 w-8 h-8 rotate-90 md:rotate-0" />
-          </div>
-
-          <div className="bg-green-50 p-6 rounded-xl border border-green-200 shadow-sm mb-8">
-            <p className="font-bold text-green-700">Same need, different structure (Script #34):</p>
-            <p className="italic mb-4 bg-white p-4 rounded-lg border border-green-100">"I want to share something with you and get your thoughts. I know you're working hard for us. I miss our connection time together. Would you be willing to spend 20 min tonight just talking? No pressure - let me know what you think."</p>
-
-            <p className="font-bold text-gray-900">What his brain processes:</p>
-            <ul className="list-disc pl-5 space-y-2 mb-4 text-sm">
-              <li><span className="font-bold">"Get your thoughts"</span> = activates his problem-solver mode (he's good at that)</li>
-              <li><span className="font-bold">"I know you're working hard"</span> = acknowledgment, not criticism</li>
-              <li><span className="font-bold">"Our connection time"</span> = shared thing we both want, not "you're failing me"</li>
-              <li><span className="font-bold">"20 min"</span> = specific, manageable, not open-ended emotional demand</li>
-              <li><span className="font-bold">"No pressure"</span> = safety signal, nervous system stays calm</li>
+          <div className="bg-gray-50 p-4 rounded-xl mb-12 text-sm">
+            <p className="font-bold mb-2">Why Script #34 works:</p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2"><Check className="w-4 h-4 text-green-500 mt-1 shrink-0" /> <span><span className="font-bold">"Get your thoughts"</span> = activates his problem-solver mode (he's good at that)</span></li>
+              <li className="flex items-start gap-2"><Check className="w-4 h-4 text-green-500 mt-1 shrink-0" /> <span><span className="font-bold">"I know you're working hard"</span> = acknowledgment, not criticism</span></li>
+              <li className="flex items-start gap-2"><Check className="w-4 h-4 text-green-500 mt-1 shrink-0" /> <span><span className="font-bold">"No pressure"</span> = safety signal, keeps him calm</span></li>
             </ul>
-
-            <p className="font-bold text-gray-900">His response:</p>
-            <p className="font-medium">"Yeah, I'd like that. Give me 10 to finish this and I'm all yours."</p>
           </div>
 
           <p className="font-bold text-xl text-center my-8">Same. Exact. Need.</p>
@@ -173,38 +188,98 @@ const LandingPage: React.FC = () => {
 
           <hr className="my-12 border-gray-200" />
 
-          <h2 className="text-2xl md:text-3xl font-bold serif mb-6">What Women Are Saying After Using These</h2>
-          <p className="italic mb-8">(And I'm just going to share these straight because they're better than anything I could say about how this works.)</p>
+          <h2 className="text-2xl md:text-3xl font-bold serif mb-8 text-center">What Women Are Saying</h2>
 
-          <div className="space-y-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="font-bold text-lg mb-2">"Within 20 minutes he opened up about work stress he's been carrying for months..."</h3>
-              <p className="text-gray-700 mb-4">"I tried Script #62 from Chapter 5. I'm not kidding, within 20 minutes he opened up about work stress he'd been carrying for MONTHS. He actually cried and apologized for being distant. We talked for 2 hours. I can't remember the last time we talked for 2 hours about anything besides the kids' schedules."</p>
-              <p className="text-sm font-bold text-gray-500">— Sarah T., 38 • Pittsburgh, PA • Married 12 years</p>
+          <div className="space-y-6">
+
+            {/* Testimonial 1 */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
+              <div className="shrink-0 flex md:flex-col items-center gap-3">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah T." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
+                <div className="text-center md:text-left">
+                  <p className="font-bold text-sm">Sarah T.</p>
+                  <p className="text-xs text-gray-500">Married 12 years</p>
+                </div>
+              </div>
+              <div>
+                <div className="flex text-yellow-500 gap-1 mb-2">
+                  {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                </div>
+                <h3 className="font-bold text-lg mb-2">"Within 20 minutes he opened up..."</h3>
+                <p className="text-gray-700 text-sm">"I tried Script #62... within 20 minutes he opened up about work stress he'd been carrying for MONTHS. He actually cried and apologized for being distant. We talked for 2 hours."</p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="font-bold text-lg mb-2">"From 3 texts per week to 15+ daily conversations..."</h3>
-              <p className="text-gray-700 mb-4">"I was ready to call a lawyer. I felt completely invisible. I started using the appreciation scripts from Chapter 1. He started texting me throughout the day just to share random thoughts. Yesterday he sent me a funny meme and said 'this made me think of you.' We've gone from maybe 3 meaningful exchanges per WEEK to 15+ actual conversations DAILY. I have my best friend back."</p>
-              <p className="text-sm font-bold text-gray-500">— Jennifer M., 34 • Austin, TX • Married 9 years</p>
+            {/* Testimonial 2 */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
+              <div className="shrink-0 flex md:flex-col items-center gap-3">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jennifer M." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
+                <div className="text-center md:text-left">
+                  <p className="font-bold text-sm">Jennifer M.</p>
+                  <p className="text-xs text-gray-500">Married 9 years</p>
+                </div>
+              </div>
+              <div>
+                <div className="flex text-yellow-500 gap-1 mb-2">
+                  {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                </div>
+                <h3 className="font-bold text-lg mb-2">"I have my best friend back"</h3>
+                <p className="text-gray-700 text-sm">"I was ready to call a lawyer. I felt completely invisible. I started using the appreciation scripts... We've gone from maybe 3 meaningful exchanges per WEEK to 15+ actual conversations DAILY."</p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="font-bold text-lg mb-2">"After $8,000 in failed marriage counseling..."</h3>
-              <p className="text-gray-700 mb-4">"We spent $8,000 on marriage therapy over 18 months. My husband hated every session. We quit therapy and I was ready to quit the marriage. The conflict resolution scripts in Chapter 4 gave me the exact words I needed. We solved a 3-year-running argument about his mother in ONE 15-minute conversation. I'm simultaneously furious that a $19 book did what $8,000 of therapy couldn't and incredibly grateful it exists."</p>
-              <p className="text-sm font-bold text-gray-500">— Lisa R., 36 • Miami, FL • Married 11 years</p>
+            {/* Testimonial 3 */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
+              <div className="shrink-0 flex md:flex-col items-center gap-3">
+                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Lisa R." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
+                <div className="text-center md:text-left">
+                  <p className="font-bold text-sm">Lisa R.</p>
+                  <p className="text-xs text-gray-500">Married 11 years</p>
+                </div>
+              </div>
+              <div>
+                <div className="flex text-yellow-500 gap-1 mb-2">
+                  {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                </div>
+                <h3 className="font-bold text-lg mb-2">"Better than $8,000 of therapy"</h3>
+                <p className="text-gray-700 text-sm">"We spent $8,000 on marriage therapy over 18 months. My husband hated every session... The conflict resolution scripts in Chapter 4 gave me the exact words I needed. We solved a 3-year-running argument in ONE 15-minute conversation."</p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="font-bold text-lg mb-2">"He initiated sex for the first time in 8 months..."</h3>
-              <p className="text-gray-700 mb-4">"I used Script #31 from the intimacy chapter. Just sent it. Didn't expect much. He came home early from work. Actually TALKED to me for 45 minutes before anything physical happened. Then HE initiated. For the first time in 8 months. I cried. He asked if he did something wrong. I said 'no, you did everything right.' We've had sex 4 times this week. FOUR TIMES. We haven't done that since our honeymoon."</p>
-              <p className="text-sm font-bold text-gray-500">— Amanda K., 41 • Denver, CO • Married 15 years</p>
+            {/* Testimonial 4 */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
+              <div className="shrink-0 flex md:flex-col items-center gap-3">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Amanda K." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
+                <div className="text-center md:text-left">
+                  <p className="font-bold text-sm">Amanda K.</p>
+                  <p className="text-xs text-gray-500">Married 15 years</p>
+                </div>
+              </div>
+              <div>
+                <div className="flex text-yellow-500 gap-1 mb-2">
+                  {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                </div>
+                <h3 className="font-bold text-lg mb-2">"He initiated sex for the first time in 8 months..."</h3>
+                <p className="text-gray-700 text-sm">"I used Script #31 from the intimacy chapter... He actually TALKED to me for 45 minutes before anything physical happened. Then HE initiated. For the first time in 8 months. I cried."</p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="font-bold text-lg mb-2">"He said the words I've been waiting 6 years to hear..."</h3>
-              <p className="text-gray-700 mb-4">"I used Script #84 during what was shaping up to be our worst fight ever. He stopped mid-sentence. Got quiet. Then said: 'I don't want to fight either. I'm sorry. I know I've been checked out. I don't know how to fix it but I want to try.' Those are the words I've been waiting 6 YEARS to hear. We didn't solve everything that night. But he was actually PRESENT. That's all I wanted."</p>
-              <p className="text-sm font-bold text-gray-500">— Rebecca S., 39 • Portland, OR • Married 13 years</p>
+            {/* Testimonial 5 */}
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6">
+              <div className="shrink-0 flex md:flex-col items-center gap-3">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Rebecca S." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
+                <div className="text-center md:text-left">
+                  <p className="font-bold text-sm">Rebecca S.</p>
+                  <p className="text-xs text-gray-500">Married 13 years</p>
+                </div>
+              </div>
+              <div>
+                <div className="flex text-yellow-500 gap-1 mb-2">
+                  {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                </div>
+                <h3 className="font-bold text-lg mb-2">"Words I've been waiting 6 years to hear"</h3>
+                <p className="text-gray-700 text-sm">"I used Script #84 during what was shaping up to be our worst fight ever. He stopped mid-sentence. Then said: 'I don't want to fight either... I want to try.' We didn't solve everything that night. But he was actually PRESENT."</p>
+              </div>
             </div>
           </div>
 
@@ -222,134 +297,101 @@ const LandingPage: React.FC = () => {
             <div>
               <h3 className="text-xl font-bold mb-2">Chapter 1: Daily Connection Scripts (1-12)</h3>
               <p className="italic text-gray-600 mb-4">The texts that keep him engaged during the day without being needy or annoying.</p>
-              <p>Because here's what happens when you text him "how's your day going?" for the 47th time.</p>
-              <p>He feels obligated to respond. But he doesn't know what you actually want. So he says "fine" and goes back to work feeling vaguely guilty that he's a bad husband.</p>
-              <p>Great. Now you're both frustrated.</p>
               <p>These scripts actually work because they give him something specific to respond to. And they make him feel appreciated instead of interrogated.</p>
 
-              <div className="bg-gray-50 p-4 rounded-lg my-4">
-                <p className="font-bold">Script #4 (The Appreciation Anchor):</p>
-                <p className="italic">"I was thinking about [specific thing he did] earlier. That really meant a lot to me. Thank you."</p>
+              <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <p className="text-xs text-gray-400 text-center mb-1">Today 2:30 PM</p>
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
+                  <p>Script #4: "I was thinking about how you [specific action] earlier. That really meant a lot to me. Thank you."</p>
+                </div>
+                <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: It's specific (not generic "thanks for everything"), it's about something that already happened (so you're not asking for anything), and it's just acknowledgment. No bigger conversation required.</p>
-              <p>He reads it. Feels good. Texts back something nice. You both feel connected.</p>
-              <p>Done.</p>
+              <p>Why this works: It's specific, it's about something that already happened (so you're not asking for anything), and it's just acknowledgment.</p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-2">Chapter 2: Conversation Starter Scripts (13-24)</h3>
               <p className="italic text-gray-600 mb-4">How to bring up something important without triggering his "oh god what did I do now" panic.</p>
-              <p>You know that look he gets when you say "we need to talk"?</p>
-              <p>That's his nervous system flooding with cortisol because his brain thinks he's about to get criticized.</p>
-              <p>Even if you're not criticizing him. Even if you just want to discuss something normal.</p>
-              <p>His body doesn't know that. It just knows "we need to talk" = danger.</p>
-              <p>These scripts bypass that whole reaction.</p>
 
-              <div className="bg-gray-50 p-4 rounded-lg my-4">
-                <p className="font-bold">Script #18 (The Safe Entry):</p>
-                <p className="italic">"I want to share something with you and get your thoughts. No pressure, just curious what you think about this."</p>
+              <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
+                  <p>Script #18: "I want to share something with you and get your thoughts. No pressure, just curious what you think about this."</p>
+                </div>
+                <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: "Get your thoughts" activates his problem-solver brain (the part that actually functions well). "No pressure" is a safety signal. "Share something" feels like you're bringing him into something, not confronting him about something.</p>
-              <p>His defenses stay down. You can actually have the conversation.</p>
+              <p>Why this works: "Get your thoughts" activates his problem-solver brain. "No pressure" is a safety signal.</p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-2">Chapter 3: Intimacy Recovery Scripts (25-38)</h3>
               <p className="italic text-gray-600 mb-4">For when the physical connection has been... yeah.</p>
-              <p>This is the section women tell me they were most skeptical about.</p>
-              <p>Because how is a text going to fix months (years?) of rejected advances, duty sex, or complete physical disconnect?</p>
-              <p>Fair question.</p>
-              <p>These scripts don't magically make him want to jump you.</p>
-              <p>What they do is remove the performance anxiety, pressure, and resentment that's been killing intimacy in the first place.</p>
 
-              <div className="bg-gray-50 p-4 rounded-lg my-4">
-                <p className="font-bold">Script #31 (The Desire Signal):</p>
-                <p className="italic">"I miss being close to you. Not in a 'you're doing something wrong' way. I genuinely just miss US."</p>
+              <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
+                  <p>Script #31: "I miss being close to you. Not in a 'you're doing something wrong' way. I genuinely just miss US."</p>
+                </div>
+                <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: "I miss" is about your feeling, not his failure. "Being close" is about connection, not sex (removes pressure). You're preemptively addressing his biggest fear (that you're mad at him). "US" makes it a shared thing you both want, not something he's supposed to provide.</p>
-              <p>Amanda (the woman who'd had sex 4 times in a week after sending this) said her husband's whole face changed when he read it.</p>
-              <p>He'd been avoiding her because he thought she was angry. Turns out he missed her too.</p>
+              <p>Why this works: "I miss" is about your feeling, not his failure. You're preemptively addressing his biggest fear (that you're mad at him).</p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-2">Chapter 4: Conflict Resolution Scripts (39-54)</h3>
               <p className="italic text-gray-600 mb-4">How to address actual problems without starting World War 3.</p>
-              <p>Small disagreements shouldn't become massive fights.</p>
-              <p>But they do. Because the way we naturally bring up problems triggers defensiveness.</p>
-              <p>And once he's defensive, his capacity for reason is gone. Now you're both just trying to win instead of solve anything.</p>
-              <p>These scripts keep his brain in problem-solving mode instead of defense mode.</p>
 
-              <div className="bg-gray-50 p-4 rounded-lg my-4">
-                <p className="font-bold">Script #47 (The Problem-Solving Invite):</p>
-                <p className="italic">"I need your help figuring something out. You're really good at [relevant skill]. Can I get 10 minutes of your brain?"</p>
+              <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
+                  <p>Script #47: "I need your help figuring something out. You're really good at [skill]. Can I get 10 minutes of your brain?"</p>
+                </div>
+                <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: "Need your help" activates his hero mode. Acknowledging his competence makes him feel valued instead of attacked. Specific timeframe (10 minutes) makes it manageable. "Your brain" frames it as intellectual problem-solving, not emotional processing.</p>
-              <p>Lisa (the one who spent $8k on therapy) used a version of this to finally resolve the mother-in-law thing.</p>
-              <p>15 minutes. Three years of fighting. Done.</p>
+              <p>Why this works: "Need your help" activates his hero mode. Acknowledging his competence makes him feel valued instead of attacked.</p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-2">Chapter 5: Vulnerability Scripts (55-68)</h3>
               <p className="italic text-gray-600 mb-4">Getting him to actually tell you what's wrong instead of saying "I'm fine."</p>
-              <p>Men don't share what's bothering them because they've learned that sharing feelings often makes things worse.</p>
-              <p>Either you try to fix it (which makes them feel incompetent). Or you get upset that they're upset (now they're managing your emotions on top of their own). Or you don't understand the problem (so they feel more alone).</p>
-              <p>So they just... don't share.</p>
-              <p>These scripts create actual safety. The kind where he knows you're not going to freak out or try to solve it or make it about you.</p>
 
-              <div className="bg-gray-50 p-4 rounded-lg my-4">
-                <p className="font-bold">Script #62 (The Emotional Safety Net):</p>
-                <p className="italic">"I know you've got a lot on your plate. I'm here if you want to talk about it. And also totally fine if you don't. Just want you to know I'm on your side."</p>
+              <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
+                  <p>Script #62: "I know you've got a lot on your plate. I'm here if you want to talk about it. And also totally fine if you don't. Just want you to know I'm on your side."</p>
+                </div>
+                <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: You're acknowledging his reality without making him explain it. You're offering support without demanding he take it. You're giving him agency to choose. And "on your side" positions you as teammate, not opponent.</p>
-              <p>Sarah's husband (the one who cried about work stress) said later that he'd been wanting to talk about it for months but didn't know how to bring it up without it becoming a whole thing.</p>
-              <p>This script made it safe.</p>
+              <p>Why this works: You're offering support without demanding he take it. And "on your side" positions you as teammate, not opponent.</p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-2">Chapter 6: Boundary Scripts (69-78)</h3>
               <p className="italic text-gray-600 mb-4">How to ask for what you need without starting a fight.</p>
-              <p>Asking for help shouldn't feel like pulling teeth.</p>
-              <p>Setting boundaries around his mom/friends/work shouldn't make you the bad guy.</p>
-              <p>But it does. Because the way we naturally make requests sounds like criticism or demands.</p>
 
-              <div className="bg-gray-50 p-4 rounded-lg my-4">
-                <p className="font-bold">Script #73 (The Clean Request):</p>
-                <p className="italic">"Would you be willing to [specific action]? It would really help me with [specific outcome]."</p>
+              <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
+                  <p>Script #73: "Would you be willing to [specific action]? It would really help me with [specific outcome]."</p>
+                </div>
+                <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: "Would you be willing" respects his agency (he can choose). Being specific means he knows exactly what you're asking for. Explaining the outcome helps him understand why it matters.</p>
-              <p>No guilt. No score-keeping. Just a clear request.</p>
+              <p>Why this works: "Would you be willing" respects his agency. No guilt. No score-keeping. Just a clear request.</p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-2">Chapter 7: Emergency Scripts (79-87)</h3>
               <p className="italic text-gray-600 mb-4">When things are at breaking point and you need something that works right now.</p>
-              <p>Not next week after you've both calmed down.</p>
-              <p>Not after you've processed it in therapy.</p>
-              <p>Now.</p>
 
-              <div className="bg-gray-50 p-4 rounded-lg my-4">
-                <p className="font-bold">Script #84 (The Reset Button):</p>
-                <p className="italic">"I don't want to fight. I want to understand you. Can we start over?"</p>
+              <div className="flex flex-col gap-1 my-6 max-w-sm mx-auto">
+                <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[90%] shadow-sm text-sm">
+                  <p>Script #84: "I don't want to fight. I want to understand you. Can we start over?"</p>
+                </div>
+                <p className="text-[10px] text-gray-400 text-right pr-2">Delivered</p>
               </div>
 
-              <p>Why this works: States what you DO want (not what you don't). "Understand you" makes it about him, not you. "Start over" offers hope instead of blame. And it's short (when emotions are high, fewer words work better).</p>
-              <p>Rebecca used this during their worst fight in 6 years.</p>
-              <p>He stopped mid-sentence. Apologized. Said he didn't know how to fix things but wanted to try.</p>
-              <p>They're still married. That was 2 years ago.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-2">BONUS: Chapter 8 - Understanding His Brain</h3>
-              <p className="italic text-gray-600 mb-4">The science behind why this actually works.</p>
-              <p>Gottman's research on how men process emotions differently. Why "I feel" statements backfire. The phrases that trigger his defensive mode. How his nervous system works when he feels criticized vs supported. When to have important conversations vs when to wait.</p>
-              <p>You'll finally understand WHY he reacts the way he does.</p>
-              <p>And how to work with his biology instead of fighting against it.</p>
+              <p>Why this works: States what you DO want (not what you don't). "Understand you" makes it about him, not you. "Start over" offers hope.</p>
             </div>
           </div>
 
@@ -375,63 +417,17 @@ const LandingPage: React.FC = () => {
 
           <hr className="my-8 border-gray-200" />
 
-          <p>The problem with all that advice?</p>
-          <p>It assumes your husband processes emotional information the same way you do.</p>
-          <p>He doesn't.</p>
-          <p>So when you express yourself naturally, his brain interprets it as criticism. His nervous system floods with stress hormones. His capacity for empathy shuts down.</p>
-          <p>But when you restructure the same message using these scripts?</p>
-          <p>His brain stays calm. He actually hears you. He wants to help.</p>
-          <p className="font-bold text-lg my-4" >Same meaning. Different words. He finally responds.</p>
-
-          <hr className="my-12 border-gray-200" />
-
-          <h2 className="text-2xl md:text-3xl font-bold serif mb-6">Why This Works (Even When Everything Else Failed)</h2>
-          <p>You've probably tried a lot of things.</p>
-          <p>Marriage counseling. Date nights. Reading The 5 Love Languages (alone, because he refused). Trying to be "less emotional." Giving him space. Being more direct. Planning weekend getaways. Asking his friends for advice. Praying about it. Accepting that "this is just how marriage is."</p>
-          <p>You're still here reading this.</p>
-          <p>So none of it worked.</p>
-          <p>Here's why.</p>
-
-          <hr className="my-8 border-gray-200" />
-
-          <p>Every piece of advice told you to communicate BETTER.</p>
-          <p>No one told you to communicate DIFFERENTLY.</p>
-          <p>There's a difference.</p>
-          <p>Communicating better = saying the same thing more clearly.</p>
-          <p>Communicating differently = restructuring the message so his brain can process it.</p>
-
-          <div className="bg-gray-50 p-6 rounded-lg my-6">
-            <p className="font-bold underline mb-2">Example:</p>
-            <div className="mb-4">
-              <p className="font-semibold">Communicating BETTER:</p>
-              <p className="italic">"I feel lonely in this marriage. I need more emotional connection from you."</p>
-              <p className="text-sm text-gray-600">(Clearer. More direct. Still triggers his defensive response.)</p>
-            </div>
-            <div>
-              <p className="font-semibold">Communicating DIFFERENTLY:</p>
-              <p className="italic">"I miss our connection time. Would you be willing to spend 20 minutes tonight just talking? No pressure, I just miss us."</p>
-              <p className="text-sm text-gray-600">(Same need. Different structure. His brain stays calm enough to hear you.)</p>
-            </div>
-          </div>
-
-          <hr className="my-8 border-gray-200" />
-
-          <p>These scripts work because:</p>
-
           <h3 className="font-bold text-lg mt-6 mb-2">They're based on actual neuroscience</h3>
           <p>Dr. Gottman studied 3,000+ couples over 40 years. He identified the exact language patterns that keep marriages strong vs those that predict divorce.</p>
           <p>These scripts use the patterns that work.</p>
 
           <h3 className="font-bold text-lg mt-6 mb-2">They speak to how his brain actually processes information</h3>
-          <p>Men process emotional information more slowly than women. They need things to be specific (not vague), one point at a time (not multiple issues), clear requests (not implied expectations), and safety signals (so their nervous system doesn't trigger fight-or-flight).</p>
+          <p>Men process emotional information more slowly than women. They need things to be specific (not vague), one point at a time (not multiple issues), clear requests (not implied expectations).</p>
 
           <h3 className="font-bold text-lg mt-6 mb-2">They're plug-and-play</h3>
           <p>You don't need to understand attachment theory. Process your childhood trauma. Get him to read a book. Convince him therapy is important. Wait until he's "ready to work on things."</p>
           <p>You just copy the script. Send it. Watch what happens.</p>
 
-          <h3 className="font-bold text-lg mt-6 mb-2">They work even if he's not trying</h3>
-          <p>These scripts are designed to bypass his defensiveness.</p>
-          <p>So even if he's checked out, exhausted, or convinced the marriage is fine "the way it is," the right words still get through.</p>
 
           <hr className="my-12 border-gray-200" />
 
@@ -442,46 +438,28 @@ const LandingPage: React.FC = () => {
               <p className="font-bold text-lg">"Will he know I'm using scripts?"</p>
               <p>No. These read like normal texts.</p>
               <p>The "science" part is invisible to him. He just experiences you as easier to talk to.</p>
-              <p>(Several women reported their husbands saying "you've been different lately" or "I like how we've been talking" without knowing why.)</p>
             </div>
 
             <div>
               <p className="font-bold text-lg">"What if he just doesn't care anymore?"</p>
               <p>If he's still responding to your texts at all, there's something to work with.</p>
               <p>These scripts are specifically designed for men who seem checked out. They create safety first, then connection.</p>
-              <p>One woman used Script #84 during what she thought was their final fight before divorce papers.</p>
-              <p>He stopped mid-argument and said "I don't want to fight either. I'm sorry."</p>
-              <p>They're still married. That was 2 years ago.</p>
             </div>
 
             <div>
               <p className="font-bold text-lg">"Isn't this just manipulation?"</p>
-              <p>No.</p>
-              <p>Manipulation is getting someone to do what YOU want by being dishonest.</p>
+              <p>No. Manipulation is getting someone to do what YOU want by being dishonest.</p>
               <p>These scripts help you express what you ACTUALLY mean in a way his brain can ACTUALLY process.</p>
-              <p>You're not changing your message. You're translating it.</p>
             </div>
 
             <div>
-              <p className="font-bold text-lg">"What if I've already tried everything and screwed things up?"</p>
+              <p className="font-bold text-lg">"What if I've already tried everything?"</p>
               <p>Good news: these scripts work especially well for recovering from past fights.</p>
-              <p>Chapter 7 has specific "reset" scripts designed for when things feel broken.</p>
-              <p>Multiple women reported these working even after separations, affairs, or years of built-up resentment.</p>
             </div>
 
             <div>
               <p className="font-bold text-lg">"Do I have to use these forever?"</p>
-              <p>No.</p>
-              <p>Once he experiences you as "safe to open up to," his brain starts to relax around you naturally.</p>
-              <p>Most women report needing the scripts less after 30-60 days because the dynamic has shifted.</p>
-              <p>But you'll probably keep using them anyway because they work so well.</p>
-            </div>
-
-            <div>
-              <p className="font-bold text-lg">"What if my situation is different/worse/more complicated?"</p>
-              <p>The 87 scripts cover different personality types, different conflict styles, different levels of disconnect (from "distant" to "ready to divorce"), and different specific issues (intimacy, parenting, in-laws, money).</p>
-              <p>Chances are high there's a script for your exact situation.</p>
-              <p>And if not, Chapter 8 teaches you the formula so you can create your own.</p>
+              <p>No. Once he experiences you as "safe to open up to," his brain starts to relax around you naturally.</p>
             </div>
           </div>
 
@@ -496,37 +474,27 @@ const LandingPage: React.FC = () => {
             <p><span className="font-bold">Hour 1:</span> He responds differently than usual (maybe just a little, but you notice)</p>
             <p><span className="font-bold">Day 3:</span> You've used a few scripts and conversations feel easier somehow</p>
             <p><span className="font-bold">Week 2:</span> He's initiating conversations. Texting you first. Asking about your day and actually listening.</p>
-            <p><span className="font-bold">Month 1:</span> You haven't had a fight in weeks (not because you're avoiding conflict, because you're addressing things before they escalate)</p>
-            <p><span className="font-bold">Month 3:</span> Your friends ask what changed. You can't quite explain it. Things just feel good again.</p>
-          </div>
-
-          <div className="my-12 text-center">
-            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              GET ALL 87 SCRIPTS - $19 <ArrowRight className="w-5 h-5" />
-            </a>
-            <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
+            <p><span className="font-bold">Month 1:</span> You haven't had a fight in weeks.</p>
           </div>
 
           <hr className="my-12 border-gray-200" />
 
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 text-center">
             <div className="flex justify-center mb-6">
               <ShieldCheck className="w-16 h-16 text-[#E67E7E]" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold serif mb-6 text-center">Our "It Works Or It's Free" Guarantee</h2>
+            <h2 className="text-2xl md:text-3xl font-bold serif mb-6">Our "It Works Or It's Free" Guarantee</h2>
             <p>Get the 87 scripts. Try them for 60 days.</p>
             <p>If you don't see your husband responding differently - if conversations don't get easier - if things don't start to feel better...</p>
             <p>Email us. We'll refund every penny. No questions asked.</p>
-            <p>You can even keep the guide.</p>
-            <p>Why would we do this?</p>
-            <p>Because these scripts work.</p>
-            <p>And we know once you see your husband actually HEAR you for the first time in months (maybe years), you're not going to ask for a refund.</p>
           </div>
 
           <hr className="my-12 border-gray-200" />
 
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6 text-center">Get All 87 Scripts For $19</h2>
           <p className="text-center mb-8">Here's what you're getting:</p>
+
+          <BookMockup />
 
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-rose-100 max-w-xl mx-auto">
             <ul className="space-y-3 mb-8">
@@ -538,9 +506,7 @@ const LandingPage: React.FC = () => {
               <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 5: Vulnerability Scripts (55-68)</span></li>
               <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 6: Boundary Scripts (69-78)</span></li>
               <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 7: Emergency Scripts (79-87)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>BONUS Chapter 8: The science behind why this works (so you can create your own scripts)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Instant digital access (PDF download sent to your email immediately)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>60-day money-back guarantee (it works or it's free)</span></li>
+              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>BONUS Chapter 8: The science behind why this works</span></li>
             </ul>
 
             <div className="text-center mb-6">
@@ -557,24 +523,18 @@ const LandingPage: React.FC = () => {
           <hr className="my-12 border-gray-200" />
 
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6">One Last Thing</h2>
-          <p>You've been trying to get him to hear you for how long now?</p>
-          <p>Months? Years?</p>
-          <p>You've probably thought "maybe this is just how marriage is supposed to be" or "maybe I'm expecting too much" or "maybe he's just not capable of this kind of connection."</p>
+          <p>You've seen other couples actually enjoy talking to each other. You know it's possible.</p>
           <p>The husbands in those testimonials above seemed just as checked out. Just as defensive. Just as "not capable of emotional connection."</p>
           <p>Until their wives started speaking a language their brains could actually process.</p>
-          <p>Then everything changed.</p>
-          <p>Not overnight. But fast enough that these women knew something was different within days.</p>
 
           <div className="my-8 bg-rose-50 p-6 rounded-lg text-center">
-            <p className="font-medium text-lg mb-4">You can keep trying the same approach and hoping for different results.</p>
-            <p className="font-medium text-lg mb-4">Or you can try something that's already worked for 500+ other women in your exact situation.</p>
             <p className="font-bold text-xl">$19. 87 scripts. 60-day guarantee.</p>
             <p className="font-bold text-xl mt-2">What do you actually have to lose?</p>
           </div>
 
           <div className="text-center mb-12">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              GET ALL 87 SCRIPTS NOW - $19 <ArrowRight className="w-5 h-5" />
+              GET THE SCRIPTS - $19 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
