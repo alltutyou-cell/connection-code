@@ -54,6 +54,14 @@ const LandingPage: React.FC = () => {
           <h1 className="text-3xl md:text-5xl font-bold serif leading-tight mb-6">
             The 87 Scripts That Made Him Feel Like "We're On The Same Team Again"
           </h1>
+
+          <div className="bg-blue-50 inline-block px-6 py-3 rounded-xl border border-blue-100 mb-8 max-w-lg mx-auto shadow-sm">
+            <p className="font-bold text-sm text-blue-700 uppercase tracking-widest mb-2 flex justify-center items-center gap-2">✨ INSTANT DIGITAL DOWNLOAD ✨</p>
+            <div className="text-xs md:text-sm text-gray-600 space-y-1">
+              <p>87 Copy-Paste Text Message Scripts • Available on your phone in 2 minutes</p>
+              <p className="text-gray-500">No shipping. No waiting. No apps to download.</p>
+            </div>
+          </div>
           <p className="text-xl md:text-2xl text-gray-600 font-medium mb-8 max-w-2xl mx-auto">
             When He Finally Hears You (Without Another Exhausting Fight), Everything Changes - Get All 87 Word-for-Word Scripts That Make Him WANT to Reconnect
           </p>
@@ -67,6 +75,25 @@ const LandingPage: React.FC = () => {
 
           <div className="mt-8 mb-4 transform scale-90 md:scale-100">
             <BookMockup />
+
+            <div className="max-w-lg mx-auto mt-8 bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-left grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <p className="font-bold text-xs text-gray-400 uppercase tracking-widest mb-3 border-b border-gray-100 pb-2">📱 DELIVERED AS:</p>
+                <ul className="space-y-2 text-sm text-gray-700 font-medium">
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-green-500 shrink-0 mt-0.5" /> <span>PDF (works on any device)</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-green-500 shrink-0 mt-0.5" /> <span>Quick Reference Cards</span></li>
+                  <li className="flex items-start gap-2"><Check className="w-4 h-4 text-green-500 shrink-0 mt-0.5" /> <span>30-Day Action Plan</span></li>
+                </ul>
+              </div>
+              <div className="opacity-75">
+                <p className="font-bold text-xs text-gray-400 uppercase tracking-widest mb-3 border-b border-gray-100 pb-2">❌ NOT:</p>
+                <ul className="space-y-2 text-sm text-gray-500">
+                  <li className="flex items-start gap-2"><span>Physical book (no shipping)</span></li>
+                  <li className="flex items-start gap-2"><span>Video course (no watching)</span></li>
+                  <li className="flex items-start gap-2"><span>Coaching (no calls/zooms)</span></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
