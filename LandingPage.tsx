@@ -67,11 +67,10 @@ const LandingPage: React.FC = () => {
           </p>
 
           <div className="mt-8 mb-4">
-            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex flex-col items-center gap-1" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              <span className="text-xl font-bold flex items-center gap-2">GET INSTANT ACCESS - $19 <ArrowRight className="w-5 h-5" /></span>
-              <span className="text-sm font-medium opacity-90">↓ PDF Download in 2 Minutes</span>
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+              SAVE MY MARRIAGE - $37 <ArrowRight className="w-5 h-5" />
             </a>
-            <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
+            <p className="text-sm text-gray-500 mt-2">💳 Secure checkout • 🔒 60-day guarantee • 📱 Instant access</p>
           </div>
 
           <div className="mt-8 mb-4 transform scale-90 md:scale-100">
@@ -122,7 +121,7 @@ const LandingPage: React.FC = () => {
 
           <div className="my-8 text-center">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              I Want Him to Finally Hear Me - $19 <ArrowRight className="w-5 h-5" />
+              I Want Him to Finally Hear Me - $37 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -340,7 +339,7 @@ const LandingPage: React.FC = () => {
 
           <div className="mt-8 mb-4 text-center">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              I Want This for My Marriage Too - $19 <ArrowRight className="w-5 h-5" />
+              I Want This for My Marriage Too - $37 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -516,7 +515,7 @@ const LandingPage: React.FC = () => {
 
           <div className="mt-8 mb-4 text-center">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              I Want All 87 Scripts Like These - $19 <ArrowRight className="w-5 h-5" />
+              I Want All 87 Scripts Like These - $37 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -581,7 +580,7 @@ const LandingPage: React.FC = () => {
 
           <div className="mt-8 mb-4 text-center">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              My Questions Are Answered - Send The Scripts - $19 <ArrowRight className="w-5 h-5" />
+              My Questions Are Answered - Send The Scripts - $37 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -618,7 +617,7 @@ const LandingPage: React.FC = () => {
 
           <div className="mt-8 mb-4 text-center">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              Try All 87 Scripts Risk-Free - $19 <ArrowRight className="w-5 h-5" />
+              Try All 87 Scripts Risk-Free - $37 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -668,7 +667,7 @@ const LandingPage: React.FC = () => {
                   <h3 className="font-bold text-lg text-gray-900">The Connection Code</h3>
                 </div>
                 <ul className="space-y-3 text-sm text-gray-800 font-medium">
-                  <li className="flex gap-2"><span>💰</span> <span className="text-xl font-bold text-black">$19 One-Time</span></li>
+                  <li className="flex gap-2"><span>💰</span> <span className="text-xl font-bold text-black">$37 One-Time</span></li>
                   <li className="flex gap-2"><span>✅</span> <span>87 proven scripts instant access</span></li>
                   <li className="flex gap-2"><span>📱</span> <span>Use anytime, anywhere</span></li>
                   <li className="flex gap-2"><span>🚀</span> <span>Results in days, not months</span></li>
@@ -678,31 +677,46 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold serif mb-6 text-center">Get All 87 Scripts For $19</h2>
+          <h2 className="text-2xl md:text-3xl font-bold serif mb-6 text-center">Get All 87 Scripts For $37</h2>
           <p className="text-center mb-8">Here's what you're getting:</p>
 
           <BookMockup />
 
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-rose-100 max-w-xl mx-auto">
-            <ul className="space-y-3 mb-8">
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>All 87 word-for-word texting scripts organized by situation</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 1: Daily Connection Scripts (1-12)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 2: Conversation Starter Scripts (13-24)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 3: Intimacy Recovery Scripts (25-38)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 4: Conflict Resolution Scripts (39-54)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 5: Vulnerability Scripts (55-68)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 6: Boundary Scripts (69-78)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>Chapter 7: Emergency Scripts (79-87)</span></li>
-              <li className="flex gap-2"><Check className="text-green-500 shrink-0" /> <span>BONUS Chapter 8: The science behind why this works</span></li>
+            <ul className="space-y-4 mb-8 text-left">
+              <li className="flex gap-3">
+                <Check className="text-green-500 shrink-0 mt-1" />
+                <div><span className="font-bold">The Connection Code System</span> <span className="text-gray-500 text-sm block">The complete SPARK framework & neuroscience breakdown (Value: $67)</span></div>
+              </li>
+              <li className="flex gap-3">
+                <Check className="text-green-500 shrink-0 mt-1" />
+                <div><span className="font-bold">87 Copy-Paste Scripts</span> <span className="text-gray-500 text-sm block">Word-for-word texts for every situation (Value: $97)</span></div>
+              </li>
+              <li className="flex gap-3">
+                <Check className="text-green-500 shrink-0 mt-1" />
+                <div><span className="font-bold">30-Day Action Plan</span> <span className="text-gray-500 text-sm block">Daily roadmap to reconnection (Value: $47)</span></div>
+              </li>
+              <li className="flex gap-3">
+                <Check className="text-green-500 shrink-0 mt-1" />
+                <div><span className="font-bold">Quick Reference Script Cards</span> <span className="text-gray-500 text-sm block">Save to your phone for emergencies (Value: $27)</span></div>
+              </li>
+              <li className="flex gap-3">
+                <Check className="text-green-500 shrink-0 mt-1" />
+                <div><span className="font-bold">Reading His Responses Guide</span> <span className="text-gray-500 text-sm block">Decode what he really means (Value: $37)</span></div>
+              </li>
+              <li className="flex gap-3">
+                <Check className="text-green-500 shrink-0 mt-1" />
+                <div><span className="font-bold">Personality Type Adaptation</span> <span className="text-gray-500 text-sm block">Customize scripts for his type (Value: $47)</span></div>
+              </li>
             </ul>
 
             <div className="text-center mb-6">
-              <p className="text-gray-400 line-through text-lg">Total Value: $197</p>
-              <p className="text-4xl font-bold text-gray-900">Your Price Today: $19</p>
+              <p className="text-gray-400 line-through text-lg">Total Value: $322</p>
+              <p className="text-4xl font-bold text-gray-900">Your Price Today: $37</p>
             </div>
 
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg w-full px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex justify-center items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              Get Instant Access to All 87 Scripts - $19 <ArrowRight className="w-5 h-5" />
+              SAVE MY MARRIAGE - $37 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-4 text-center">60-Day Money-Back Guarantee</p>
           </div>
@@ -721,13 +735,13 @@ const LandingPage: React.FC = () => {
           <div className="my-8 bg-rose-50 p-6 rounded-lg text-center">
             <p className="font-medium text-lg mb-4">You can keep trying the same approach and hoping for different results.</p>
             <p className="font-medium text-lg mb-4">Or you can try something that's already worked for 500+ other women in your exact situation.</p>
-            <p className="font-bold text-xl">$19. 87 scripts. 60-day guarantee.</p>
+            <p className="font-bold text-xl">$37. 87 scripts. 60-day guarantee.</p>
             <p className="font-bold text-xl mt-2">What do you actually have to lose?</p>
           </div>
 
           <div className="text-center mb-12">
             <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              Yes, I Want to Save My Marriage - Get The Scripts - $19 <ArrowRight className="w-5 h-5" />
+              Yes, I Want to Save My Marriage - Get The Scripts - $37 <ArrowRight className="w-5 h-5" />
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
@@ -754,7 +768,7 @@ const LandingPage: React.FC = () => {
         {/* Mobile Sticky CTA */}
         <div className="md:hidden fixed bottom-4 left-4 right-4 z-50">
           <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white w-full py-4 rounded-xl font-bold shadow-2xl flex justify-center items-center gap-2 px-6" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-            Get All 87 Scripts - $19 <ArrowRight className="w-5 h-5" />
+            Get All 87 Scripts - $37 <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </main>
