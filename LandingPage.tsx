@@ -97,6 +97,25 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
 
+        {/* About Author Section - Trust Gap Fix */}
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-rose-100 my-10 flex flex-col md:flex-row gap-8 items-center max-w-2xl mx-auto">
+          <div className="shrink-0 relative">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg relative z-10">
+              <img src="https://ui-avatars.com/api/?name=Jul+Tabacu&size=256&background=E67E7E&color=fff" alt="Jul Tabacu" className="w-full h-full object-cover" />
+            </div>
+            <div className="absolute top-2 -right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full shadow-sm z-20 transform rotate-12">Author</div>
+          </div>
+          <div className="text-left">
+            <h3 className="font-bold text-2xl mb-3 font-serif text-gray-900">Hi, I'm Jul.</h3>
+            <div className="space-y-3 text-gray-700 leading-relaxed">
+              <p>Six years ago, my marriage was dead. One-word texts. Cold shoulders. Sleeping in separate rooms.</p>
+              <p>I tried everything. Therapy failed. Date nights felt forced. Romance books made it worse.</p>
+              <p>Then I discovered what actually works: <span className="font-bold text-[#E67E7E]">the exact neurological triggers that make men WANT to reconnect.</span></p>
+              <p className="font-bold text-gray-900">I saved my marriage. Then I helped 500+ other wives do the same. Now I'm sharing the exact scripts...</p>
+            </div>
+          </div>
+        </div>
+
         {/* Intro Body */}
         <div className="prose prose-lg mx-auto text-gray-800 leading-relaxed">
           <p>Look, I'm not going to promise this will make your husband "fall in love with you again" or whatever.</p>
@@ -183,7 +202,8 @@ const LandingPage: React.FC = () => {
 
           <hr className="my-12 border-gray-200" />
 
-          <h2 className="text-2xl md:text-3xl font-bold serif mb-6">Let Me Show You What I Mean</h2>
+          <h2 className="text-2xl md:text-3xl font-bold serif mb-6 uppercase tracking-wider text-[#E67E7E]">📱 Sneak Peek: Script #23</h2>
+          <p className="text-xl font-medium text-gray-600 mb-8">"When He's Emotionally Distant"</p>
 
           <div className="grid md:grid-cols-2 gap-8 items-center my-12">
             <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm relative">
@@ -205,7 +225,7 @@ const LandingPage: React.FC = () => {
 
               {/* Chat Bubble Visual */}
               <div className="my-6">
-                <p className="text-xs text-gray-500 mb-2 italic">Sarah used Script #34 when she felt disconnected:</p>
+                <p className="text-xs text-gray-500 mb-2 italic">Script #23 (The "Connection Opener"):</p>
                 <div className="flex flex-col gap-1">
                   <div className="bg-[#007AFF] text-white p-3 rounded-2xl rounded-tr-sm self-end max-w-[95%] shadow-sm text-sm">
                     <p>"I want to share something with you and get your thoughts. I know you're working hard for us. I miss our connection time together. Would you be willing to spend 20 min tonight just talking?"</p>
@@ -225,7 +245,12 @@ const LandingPage: React.FC = () => {
           </div>
 
           <div className="bg-gray-50 p-4 rounded-xl mb-12 text-sm">
-            <p className="font-bold mb-2">Why Script #34 works:</p>
+            <div className="text-center mb-4">
+              <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="text-[#E67E7E] font-bold hover:underline inline-flex items-center gap-1">
+                You get 86 more scripts like this inside <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+            <p className="font-bold mb-2">Why Script #23 works:</p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2"><Check className="w-4 h-4 text-green-500 mt-1 shrink-0" /> <span><span className="font-bold">"Get your thoughts"</span> = activates his problem-solver mode (he's good at that)</span></li>
               <li className="flex items-start gap-2"><Check className="w-4 h-4 text-green-500 mt-1 shrink-0" /> <span><span className="font-bold">"I know you're working hard"</span> = acknowledgment, not criticism</span></li>
