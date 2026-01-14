@@ -67,8 +67,9 @@ const LandingPage: React.FC = () => {
           </p>
 
           <div className="mt-8 mb-4">
-            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white text-lg px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
-              Yes, Send Me All 87 Scripts - $19 <ArrowRight className="w-5 h-5" />
+            <a href="https://connectioncode.checkoutpage.com/the-connection-code" className="coral-button text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all inline-flex flex-col items-center gap-1" data-checkout="https://connectioncode.checkoutpage.com/the-connection-code">
+              <span className="text-xl font-bold flex items-center gap-2">GET INSTANT ACCESS - $19 <ArrowRight className="w-5 h-5" /></span>
+              <span className="text-sm font-medium opacity-90">↓ PDF Download in 2 Minutes</span>
             </a>
             <p className="text-sm text-gray-500 mt-2">60-Day Money-Back Guarantee</p>
           </div>
