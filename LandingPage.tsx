@@ -625,6 +625,59 @@ const LandingPage: React.FC = () => {
 
           <hr className="my-12 border-gray-200" />
 
+          <div className="my-16">
+            <h2 className="text-2xl md:text-3xl font-bold serif mb-8 text-center">Compare Your Options</h2>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {/* Option 1: Counseling */}
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 opacity-80">
+                <div className="flex items-center gap-2 mb-4">
+                  <X className="w-6 h-6 text-red-400" />
+                  <h3 className="font-bold text-lg text-gray-700">Traditional Counseling</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-gray-600">
+                  <li className="flex gap-2"><span>💰</span> <span>$150-300 per session</span></li>
+                  <li className="flex gap-2"><span>📅</span> <span>Need 8-12 sessions minimum</span></li>
+                  <li className="flex gap-2"><span>📉</span> <span>Total: $1,200 - $3,600</span></li>
+                  <li className="flex gap-2"><span>🕰️</span> <span>Takes 3-6 months</span></li>
+                  <li className="flex gap-2"><span>❓</span> <span>May not even work</span></li>
+                </ul>
+              </div>
+
+              {/* Option 2: Retreat */}
+              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 opacity-80">
+                <div className="flex items-center gap-2 mb-4">
+                  <X className="w-6 h-6 text-red-400" />
+                  <h3 className="font-bold text-lg text-gray-700">Marriage Retreat</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-gray-600">
+                  <li className="flex gap-2"><span>💰</span> <span>$2,000 - $5,000 per couple</span></li>
+                  <li className="flex gap-2"><span>✈️</span> <span>Must travel / take time off</span></li>
+                  <li className="flex gap-2"><span>😬</span> <span>Awkward group settings</span></li>
+                  <li className="flex gap-2"><span>👋</span> <span>One weekend then alone</span></li>
+                </ul>
+              </div>
+
+              {/* Option 3: Connection Code */}
+              <div className="bg-white p-6 rounded-xl border-2 border-[#E67E7E] shadow-xl relative transform md:-translate-y-4">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#E67E7E] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                  Best Value
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                  <Check className="w-6 h-6 text-green-500" />
+                  <h3 className="font-bold text-lg text-gray-900">The Connection Code</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-gray-800 font-medium">
+                  <li className="flex gap-2"><span>💰</span> <span className="text-xl font-bold text-black">$19 One-Time</span></li>
+                  <li className="flex gap-2"><span>✅</span> <span>87 proven scripts instant access</span></li>
+                  <li className="flex gap-2"><span>📱</span> <span>Use anytime, anywhere</span></li>
+                  <li className="flex gap-2"><span>🚀</span> <span>Results in days, not months</span></li>
+                  <li className="flex gap-2"><span>♾️</span> <span>Keep forever, use whenever</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <h2 className="text-2xl md:text-3xl font-bold serif mb-6 text-center">Get All 87 Scripts For $19</h2>
           <p className="text-center mb-8">Here's what you're getting:</p>
 
