@@ -407,7 +407,7 @@ const LandingPage: React.FC = () => {
               </div>
 
               <p className="text-sm bg-gray-50 p-4 rounded-lg italic border-l-4 border-green-500">
-                "We've had sex 4 times this week. <span className="font-bold">FOUR TIMES.</span> We haven't done that since our honeymoon." — Amanda K., 41
+                "We've had sex 4 times this week. <span className="font-bold">FOUR TIMES.</span> We haven't done that since our honeymoon." — Amanda K.
               </p>
             </div>
 
