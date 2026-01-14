@@ -101,7 +101,7 @@ const LandingPage: React.FC = () => {
         <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-rose-100 my-10 flex flex-col md:flex-row gap-8 items-center max-w-2xl mx-auto">
           <div className="shrink-0 relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg relative z-10">
-              <img src="https://ui-avatars.com/api/?name=Jul+Tabacu&size=256&background=E67E7E&color=fff" alt="Jul Tabacu" className="w-full h-full object-cover" />
+              <img src="/jul-portrait.jpg" alt="Jul Tabacu" className="w-full h-full object-cover" />
             </div>
             <div className="absolute top-2 -right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full shadow-sm z-20 transform rotate-12">Author</div>
           </div>
