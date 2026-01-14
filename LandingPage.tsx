@@ -252,7 +252,7 @@ const LandingPage: React.FC = () => {
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah T." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
                 <div className="text-center md:text-left">
                   <p className="font-bold text-sm">Sarah T.</p>
-                  <p className="text-xs text-gray-500">Married 12 years</p>
+
                 </div>
               </div>
               <div>
@@ -271,7 +271,7 @@ const LandingPage: React.FC = () => {
                 <div className="text-center md:text-left">
                   <p className="font-bold text-sm">Jennifer M.</p>
                   <p className="text-xs text-gray-500">Melbourne, Australia</p>
-                  <p className="text-xs text-gray-500">Married 9 years</p>
+
                 </div>
               </div>
               <div>
@@ -289,7 +289,7 @@ const LandingPage: React.FC = () => {
                 <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Lisa R." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
                 <div className="text-center md:text-left">
                   <p className="font-bold text-sm">Lisa R.</p>
-                  <p className="text-xs text-gray-500">Married 11 years</p>
+
                 </div>
               </div>
               <div>
@@ -307,7 +307,7 @@ const LandingPage: React.FC = () => {
                 <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Amanda K." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
                 <div className="text-center md:text-left">
                   <p className="font-bold text-sm">Amanda K.</p>
-                  <p className="text-xs text-gray-500">Married 15 years</p>
+
                 </div>
               </div>
               <div>
@@ -325,7 +325,7 @@ const LandingPage: React.FC = () => {
                 <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Rebecca S." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
                 <div className="text-center md:text-left">
                   <p className="font-bold text-sm">Rebecca S.</p>
-                  <p className="text-xs text-gray-500">Married 13 years</p>
+
                 </div>
               </div>
               <div>
