@@ -270,7 +270,7 @@ const LandingPage: React.FC = () => {
                 <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jennifer M." className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" />
                 <div className="text-center md:text-left">
                   <p className="font-bold text-sm">Jennifer M.</p>
-                  <p className="text-xs text-gray-500">Melbourne, Australia</p>
+
 
                 </div>
               </div>
