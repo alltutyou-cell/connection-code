@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Star, ArrowRight, Menu, X, Check, ShieldCheck, Heart, MessageCircle } from 'lucide-react';
+import { Star, ArrowRight, Menu, X, Check, ShieldCheck, Heart, MessageCircle, Clock } from 'lucide-react';
 import BookMockup from './BookMockup';
 
 const LandingPage: React.FC = () => {
@@ -736,6 +736,19 @@ const LandingPage: React.FC = () => {
             </ul>
 
             <div className="text-center mb-6">
+              <div className="bg-red-50 border border-red-200 text-center p-4 rounded-lg mb-6 max-w-sm mx-auto">
+                <p className="flex items-center justify-center gap-2 font-bold text-red-600 mb-2 text-sm uppercase tracking-wider">
+                  <Clock className="w-5 h-5" /> PRICE GOING UP SOON
+                </p>
+                <p className="text-lg font-bold text-gray-900 mb-1">
+                  <span className="line-through text-gray-400 decoration-red-500 decoration-2 mr-2 opacity-75">$47</span>
+                  <span className="text-green-600">$37 for the next 48 hours</span>
+                </p>
+                <p className="text-sm text-gray-600 mb-3 font-medium">After that, price increases to regular $47.</p>
+                <p className="text-xs text-gray-500 leading-relaxed italic border-t border-red-100 pt-3 mt-3">
+                  Why? Because 500+ wives have used these scripts and demand is growing. I'm keeping it at $37 for the next 48 hours only. <br /> <span className="font-bold not-italic text-red-500 block mt-1">After 18.01, it's $47.</span>
+                </p>
+              </div>
               <p className="text-gray-400 line-through text-lg">Total Value: $322</p>
               <p className="text-4xl font-bold text-gray-900">Your Price Today: $37</p>
             </div>
