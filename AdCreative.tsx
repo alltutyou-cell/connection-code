@@ -99,7 +99,7 @@ const AdCreative: React.FC = () => {
 
             {/* Bottom Text */}
             <h2 className="text-2xl md:text-3xl font-bold text-[#1a472a] text-center flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer">
-                Get all 87 scripts here - $37 <ArrowRight className="w-6 h-6 border-2 border-[#1a472a] rounded-full p-0.5" />
+                Get all 87 scripts here - $19 <ArrowRight className="w-6 h-6 border-2 border-[#1a472a] rounded-full p-0.5" />
             </h2>
 
         </div>
