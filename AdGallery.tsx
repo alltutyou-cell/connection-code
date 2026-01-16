@@ -1,8 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-const AdCard = ({ children, dark = false }: { children: React.ReactNode, dark?: boolean }) => (
-    <div className={`w-[540px] h-[540px] flex flex-col justify-between p-12 shrink-0 shadow-2xl relative overflow-hidden ${dark ? 'bg-gradient-to-b from-slate-800 to-indigo-900 text-white' : 'bg-[#FAF9F6] text-[#1a1a1a]'}`}>
+const AdCard = ({ children, dark = false, id }: { children: React.ReactNode, dark?: boolean, id?: string }) => (
+    <div id={id} className={`w-[540px] h-[540px] flex flex-col justify-between p-12 shrink-0 shadow-2xl relative overflow-hidden ${dark ? 'bg-gradient-to-b from-slate-800 to-indigo-900 text-white' : 'bg-[#FAF9F6] text-[#1a1a1a]'}`}>
         {children}
     </div>
 );
@@ -16,7 +16,7 @@ const AdGallery: React.FC = () => {
             <div className="flex flex-wrap justify-center gap-12 pb-24">
 
                 {/* Concept 1: Invisible Wife */}
-                <AdCard>
+                <AdCard id="ad-invisible-wife">
                     <div>
                         <h2 className="text-[28px] font-bold mb-8 font-sans leading-tight">IF YOU'RE A WIFE WHO...</h2>
                         <p className="text-[24px] font-serif italic text-[#E67E7E] leading-snug mb-8">
@@ -36,7 +36,7 @@ const AdGallery: React.FC = () => {
                 </AdCard>
 
                 {/* Concept 2: 3AM Scroller (Dark) */}
-                <AdCard dark>
+                <AdCard dark id="ad-3am-scroller">
                     <div>
                         <h2 className="text-[28px] font-bold mb-8 font-sans leading-tight">IF YOU'RE A WIFE WHO...</h2>
                         <p className="text-[24px] font-serif italic text-rose-200 leading-snug mb-8">
@@ -58,7 +58,7 @@ const AdGallery: React.FC = () => {
                 </AdCard>
 
                 {/* Concept 3: The Silence */}
-                <AdCard>
+                <AdCard id="ad-silence">
                     <div>
                         <h2 className="text-[28px] font-bold mb-8 font-sans leading-tight">IF YOU'RE A WIFE WHO...</h2>
                         <p className="text-[24px] font-serif italic text-[#1a1a1a] leading-snug mb-8">
@@ -78,7 +78,7 @@ const AdGallery: React.FC = () => {
                 </AdCard>
 
                 {/* Concept 4: The Kiss */}
-                <AdCard>
+                <AdCard id="ad-kiss">
                     <div className="absolute inset-0 bg-gradient-to-b from-rose-50 to-white -z-10"></div>
                     <div>
                         <h2 className="text-[28px] font-bold mb-8 font-sans leading-tight">IF YOU'RE A WIFE WHO...</h2>
@@ -99,7 +99,7 @@ const AdGallery: React.FC = () => {
                 </AdCard>
 
                 {/* Concept 5: Phone Scroll */}
-                <AdCard>
+                <AdCard id="ad-phone-scroll">
                     <div>
                         <h2 className="text-[28px] font-bold mb-8 font-sans leading-tight">IF YOU'RE A WIFE WHO...</h2>
                         <p className="text-[24px] font-serif italic text-[#E67E7E] leading-snug mb-8">

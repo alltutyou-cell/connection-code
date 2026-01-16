@@ -5,41 +5,56 @@ const path = require('path');
     console.log('Launching browser...');
     const browser = await puppeteer.launch({
         headless: "new",
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--font-render-hinting=none']
     });
     const page = await browser.newPage();
 
-    // 1. Capture the "Text Message" Ad (AdCreative)
-    try {
-        console.log('Capturing Text Message Ad...');
-        await page.setViewport({ width: 1080, height: 1080, deviceScaleFactor: 2 });
-        await page.goto('http://localhost:5174/ad-preview', { waitUntil: 'networkidle0' });
-        await page.screenshot({
-            path: path.join(__dirname, 'ad-creatives', 'ad-text-msg-v2.jpg'),
-            quality: 90,
-            type: 'jpeg'
-        });
-        console.log('Saved ad-text-msg-v2.jpg');
-    } catch (e) {
-        console.error('Error capturing Ad Preview:', e);
-    }
+    // IDs of the 5 concepts in AdGallery.tsx
+    const adIds = [
+        'ad-invisible-wife',
+        'ad-3am-scroller',
+        'ad-silence',
+        'ad-kiss',
+        'ad-phone-scroll'
+    ];
 
-    // 2. Capture the "5 Concepts" Gallery
     try {
-        console.log('Capturing Ad Gallery...');
-        await page.setViewport({ width: 1400, height: 2000, deviceScaleFactor: 2 }); // Taller viewport
+        console.log('Navigating to Ad Gallery...');
+        // Use large viewport to ensure all are rendered (though flex wrap might put them down)
+        // I'll set a huge height to prevent scroll issues
+        await page.setViewport({ width: 1920, height: 4000, deviceScaleFactor: 2 });
         await page.goto('http://localhost:5174/ad-gallery', { waitUntil: 'networkidle0' });
 
-        // Capture the full page
+        // Wait for content (first ad)
+        await page.waitForSelector('#ad-invisible-wife');
+
+        // Capture each card
+        for (const id of adIds) {
+            console.log(`Capturing #${id}...`);
+            const element = await page.$(`#${id}`);
+            if (element) {
+                await element.screenshot({
+                    path: path.join(__dirname, 'ad-creatives', `${id}.jpg`),
+                    quality: 95,
+                    type: 'jpeg'
+                });
+                console.log(`Saved ${id}.jpg`);
+            } else {
+                console.error(`Element #${id} not found!`);
+            }
+        }
+
+        // Capture Overview of Gallery
+        console.log('Capturing Gallery Overview...');
         await page.screenshot({
             path: path.join(__dirname, 'ad-creatives', 'ad-gallery-overview.jpg'),
             fullPage: true,
             quality: 90,
             type: 'jpeg'
         });
-        console.log('Saved ad-gallery-overview.jpg');
+
     } catch (e) {
-        console.error('Error capturing Ad Gallery:', e);
+        console.error('Error capturing ads:', e);
     }
 
     await browser.close();
