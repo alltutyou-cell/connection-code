@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import LandingPage from './LandingPage';
 import InfoPage from './InfoPage';
 import AdCreative from './AdCreative';
+import AdGallery from './AdGallery';
 import { TermsOfService, PrivacyPolicy, Support } from './Pages';
 
 // Scroll to top on route change
@@ -29,6 +30,7 @@ const App: React.FC = () => {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/support" element={<Support />} />
         <Route path="/ad-preview" element={<AdCreative />} />
+        <Route path="/ad-gallery" element={<AdGallery />} />
       </Routes>
       <Analytics />
     </Router>
