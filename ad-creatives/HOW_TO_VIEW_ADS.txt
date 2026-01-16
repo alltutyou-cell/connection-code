@@ -1,0 +1,8 @@
+To view the 5 new High-Fidelity Ad Creatives:
+
+1. Ensure your local dev server is running (npm run dev).
+2. Open your browser to: http://localhost:5174/ad-gallery
+
+This page contains the "Invisible Wife", "3AM Scroller", "Silence", "Kiss", and "Phone Scroll" ads, rendered with your brand colors and the corrected $19 price point.
+
+You can take screenshots of that page to generate the final JPGs for Facebook.
